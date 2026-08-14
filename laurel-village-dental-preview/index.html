@@ -519,5 +519,22 @@
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
   </script>
+<!-- WhatsApp Contact Button -->
+<a href="https://wa.me/+9233390025902" target="_blank" rel="noopener noreferrer" 
+   class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] hover:bg-[#1da851] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 px-5 py-3.5 group animate-bounce-slow">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.366.195 1.881.118.573-.069 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-2.686 7.305c-1.65 0-3.26-.149-4.832-.431l-.348-.062-3.577 1.881.933-3.288-.248-.248C3.516 14.375 2.5 11.902 2.5 9.275 2.5 4.578 6.078 1 10.775 1c2.289 0 4.439.892 6.057 2.511 1.618 1.618 2.51 3.768 2.51 6.057 0 4.697-3.578 8.275-8.275 8.275m0-15.548c-4.042 0-7.339 3.297-7.339 7.339 0 2.293.865 4.491 2.435 6.132l.245.248-.933 3.288 3.577-1.881.348.062c1.65.282 3.26.431 4.832.431 4.042 0 7.339-3.297 7.339-7.339 0-1.963-.765-3.808-2.154-5.197-1.389-1.389-3.234-2.154-5.197-2.154"/>
+    </svg>
+    <span class="font-medium text-sm whitespace-nowrap">Chat with us</span>
+</a>
+<style>
+@keyframes bounce-slow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+.animate-bounce-slow {
+    animation: bounce-slow 2s ease-in-out infinite;
+}
+</style>
 </body>
 </html>
