@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Dental Practice — Premier Eco-Friendly Dentist in San Francisco</title>
+    <meta name="description" content="Premier eco-friendly dental office in San Francisco's Financial District led by Dr. Maryam Tabar. Accepting new patients, same-day emergency care, near Montgomery Station.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            teal: '#2C7B7B',
+                            'teal-dark': '#1F5858',
+                            'teal-light': '#EBF4F4',
+                            'teal-hover': '#246666',
+                            gold: '#E8B840',
+                            'gold-hover': '#D4A32A',
+                            'gold-light': '#FFF9E6',
+                            bg: '#F8FAFA',
+                            dark: '#1A2A2A',
+                            slate: '#334155',
+                            muted: '#64748B'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -5px rgba(44, 123, 123, 0.08)',
+                        'hover': '0 20px 40px -10px rgba(44, 123, 123, 0.15)',
+                        'gold': '0 10px 25px -5px rgba(232, 184, 64, 0.3)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #F8FAFA;
+            color: #1A2A2A;
+        }
+        .bg-pattern {
+            background-image: radial-gradient(#2C7B7B 0.5px, transparent 0.5px), radial-gradient(#2C7B7B 0.5px, #F8FAFA 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.25;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-6px);
+        }
+        .tab-btn.active {
+            background-color: #2C7B7B !important;
+            color: #ffffff !important;
+            border-color: #2C7B7B !important;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+    <!-- PREVIEW BANNER AT VERY TOP (verbatim as requested) -->
+    <div style="background: #E8B840; color: #1a2a2a; text-align: center; padding: 10px; font-size: 13px; font-weight: 600;">✦ Preview created by Muhammad Siddique — Not the actual website ✦</div>
+
+    <!-- Top Info Bar -->
+    <div class="bg-brand-dark text-white text-xs py-2 px-4 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6 flex-wrap justify-center md:justify-start">
+                <span class="flex items-center gap-1.5 text-brand-gold font-medium">
+                    <i class="fa-solid fa-sparkles"></i> Accepting New Patients — Insured & Uninsured
+                </span>
+                <span class="hidden sm:inline-block text-gray-500">•</span>
+                <span class="hidden sm:flex items-center gap-1.5 text-gray-300">
+                    <i class="fa-solid fa-location-dot text-brand-gold"></i> 100 Montgomery St, Ste 350, SF (Near Montgomery Station)
+                </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-gray-300 flex items-center gap-1.5">
+                    <i class="fa-solid fa-clock text-brand-gold"></i> M-F 8am - 7pm
+                </span>
+                <a href="tel:4153622400" class="text-brand-gold font-semibold hover:underline flex items-center gap-1">
+                    <i class="fa-solid fa-phone text-xs"></i> (415) 362-2400
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-xl bg-brand-teal text-white flex items-center justify-center text-xl shadow-md group-hover:bg-brand-teal-dark transition-colors">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-xl sm:text-2xl text-brand-dark tracking-tight leading-none block">
+                        Digital Dental <span class="text-brand-teal">Practice</span>
+                    </span>
+                    <span class="text-xs font-semibold text-brand-muted tracking-wider uppercase flex items-center gap-1 mt-0.5">
+                        <i class="fa-solid fa-leaf text-green-600 text-[10px]"></i> Premier Eco-Friendly Dentist
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+                <a href="#services" class="hover:text-brand-teal transition-colors">Services</a>
+                <a href="#about" class="hover:text-brand-teal transition-colors">Eco-Practice</a>
+                <a href="#doctor" class="hover:text-brand-teal transition-colors">Dr. Tabar</a>
+                <a href="#reviews" class="hover:text-brand-teal transition-colors">Patient Reviews</a>
+                <a href="#contact" class="hover:text-brand-teal transition-colors">Location & Hours</a>
+            </nav>
+
+            <!-- Desktop CTA -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:4153622400" class="px-4 py-2.5 rounded-lg border border-brand-teal text-brand-teal text-xs font-bold hover:bg-brand-teal-light transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> (415) 362-2400
+                </a>
+                <a href="#appointment" class="px-5 py-2.5 rounded-lg bg-brand-gold hover:bg-brand-gold-hover text-brand-dark font-bold text-xs uppercase tracking-wider shadow-gold hover:shadow-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <i class="fa-solid fa-calendar-check"></i> Book Online
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 hover:text-brand-teal p-2 focus:outline-none" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#services" class="block py-2 text-slate-700 font-semibold hover:text-brand-teal border-b border-slate-50">Services (15+)</a>
+            <a href="#about" class="block py-2 text-slate-700 font-semibold hover:text-brand-teal border-b border-slate-50">About Eco Dentistry</a>
+            <a href="#doctor" class="block py-2 text-slate-700 font-semibold hover:text-brand-teal border-b border-slate-50">Dr. Maryam Tabar</a>
+            <a href="#reviews" class="block py-2 text-slate-700 font-semibold hover:text-brand-teal border-b border-slate-50">Patient Reviews</a>
+            <a href="#contact" class="block py-2 text-slate-700 font-semibold hover:text-brand-teal border-b border-slate-50">Contact & Hours</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:4153622400" class="w-full text-center py-3 rounded-lg border border-brand-teal text-brand-teal font-bold text-sm">
+                    <i class="fa-solid fa-phone"></i> Call (415) 362-2400
+                </a>
+                <a href="#appointment" class="w-full text-center py-3 rounded-lg bg-brand-gold text-brand-dark font-bold text-sm uppercase tracking-wider">
+                    <i class="fa-solid fa-calendar-check"></i> Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION (Split Hero Layout) -->
+    <section class="relative overflow-hidden bg-brand-bg py-12 lg:py-20 border-b border-slate-200/60">
+        <div class="absolute inset-0 bg-pattern pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Eco Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wide uppercase">
+                        <i class="fa-solid fa-leaf text-emerald-600"></i> SF's Premier Eco-Friendly Practice
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark tracking-tight leading-[1.15]">
+                        High-Precision Dental Care with a <span class="text-brand-teal underline decoration-brand-gold/60 decoration-4">Sustainable Touch</span>
+                    </h1>
+
+                    <!-- Paragraph Description -->
+                    <p class="text-lg text-slate-600 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Welcome to <strong class="text-brand-dark font-semibold">Digital Dental Practice</strong> in San Francisco’s Financial District. Led by <strong class="text-brand-dark font-semibold">Dr. Maryam Tabar</strong>, we deliver modern, comfortable, low-radiation dental care tailored for busy downtown professionals and families.
+                    </p>
+
+                    <!-- Feature Checklists -->
+                    <div class="grid sm:grid-cols-2 gap-3 pt-2 max-w-xl mx-auto lg:mx-0 text-left">
+                        <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                            <div class="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>Accepting New Patients</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                            <div class="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>Insured & Uninsured Welcome</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                            <div class="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>Same-Day Emergency Care</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm font-semibold text-slate-700">
+                            <div class="w-5 h-5 rounded-full bg-brand-teal/10 text-brand-teal flex items-center justify-center text-xs shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <span>2 Min from Montgomery Station</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#appointment" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-gold hover:bg-brand-gold-hover text-brand-dark font-extrabold text-sm uppercase tracking-wider shadow-gold hover:shadow-xl transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-calendar-alt text-base"></i> Book Appointment Now
+                        </a>
+                        <a href="tel:4153622400" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-white hover:bg-slate-50 text-brand-dark font-bold text-sm border border-slate-300 shadow-sm transition-all flex items-center justify-center gap-2.5">
+                            <i class="fa-solid fa-phone text-brand-teal"></i> Call (415) 362-2400
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-6 border-t border-slate-200/80 flex items-center justify-center lg:justify-start gap-8 text-slate-600 text-xs font-semibold">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-brand-gold text-sm"></i>
+                            <span>4.9 Star Rating (350+ SF Reviews)</span>
+                        </div>
+                        <div class="hidden sm:flex items-center gap-2">
+                            <i class="fa-solid fa-shield-heart text-brand-teal text-sm"></i>
+                            <span>Zero-Waste Eco Office</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Image Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Visual Card -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Modern Eco Dental Practice Office San Francisco" 
+                                 class="w-full h-[460px] object-cover hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-transparent"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+                                <span class="bg-brand-gold text-brand-dark font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-2 inline-block">
+                                    San Francisco Financial District
+                                </span>
+                                <h3 class="font-heading font-bold text-xl text-white">Digital Dental Practice</h3>
+                                <p class="text-xs text-slate-200 mt-1">100 Montgomery St, Ste 350 • Dr. Maryam Tabar</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1 (Top Right) -->
+                        <div class="absolute -top-4 -right-4 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3 animate-bounce-slow">
+                            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-leaf text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-extrabold text-brand-dark">100% Eco-Friendly</p>
+                                <p class="text-[11px] text-slate-500">Low radiation & zero waste</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 (Bottom Left) -->
+                        <div class="absolute -bottom-6 -left-4 glass-card p-4 rounded-2xl shadow-xl border border-white/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-bolt text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-extrabold text-brand-dark">Same-Day Emergency</p>
+                                <p class="text-[11px] text-slate-600">Immediate relief available</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS / PROMISE BAR -->
+    <section class="bg-brand-teal text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+                    <div class="text-brand-gold text-2xl mb-2"><i class="fa-solid fa-user-plus"></i></div>
+                    <h4 class="font-bold text-sm sm:text-base">New Patients Welcome</h4>
+                    <p class="text-xs text-teal-100 mt-1">Insured & Uninsured Plans</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+                    <div class="text-brand-gold text-2xl mb-2"><i class="fa-solid fa-leaf"></i></div>
+                    <h4 class="font-bold text-sm sm:text-base">Eco-Certified Office</h4>
+                    <p class="text-xs text-teal-100 mt-1">Green & Digital Care</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+                    <div class="text-brand-gold text-2xl mb-2"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h4 class="font-bold text-sm sm:text-base">Same-Day Urgent Care</h4>
+                    <p class="text-xs text-teal-100 mt-1">Emergency Toothache Care</p>
+                </div>
+                <div class="p-4 rounded-xl bg-white/10 backdrop-blur-sm border border-white/10">
+                    <div class="text-brand-gold text-2xl mb-2"><i class="fa-solid fa-train"></i></div>
+                    <h4 class="font-bold text-sm sm:text-base">Montgomery Station</h4>
+                    <p class="text-xs text-teal-100 mt-1">Heart of Financial District</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (15 Comprehensive Services) -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-teal text-xs font-extrabold tracking-widest uppercase bg-brand-teal-light px-3 py-1 rounded-full">
+                    Comprehensive Care
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark mt-3">
+                    Full Spectrum Dental Services
+                </h2>
+                <p class="text-slate-600 text-base mt-3">
+                    From gentle routine preventive cleanings to advanced cosmetic transformations and restorative dentistry — experience tailored oral healthcare designed for long-term health.
+                </p>
+            </div>
+
+            <!-- Service Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button onclick="filterServices('all', event)" class="tab-btn active px-5 py-2.5 rounded-full text-xs font-bold border border-slate-200 transition-all">All Services (15)</button>
+                <button onclick="filterServices('preventive', event)" class="tab-btn px-5 py-2.5 rounded-full text-xs font-bold border border-slate-200 text-slate-600 hover:border-brand-teal transition-all">Preventive & Exams</button>
+                <button onclick="filterServices('cosmetic', event)" class="tab-btn px-5 py-2.5 rounded-full text-xs font-bold border border-slate-200 text-slate-600 hover:border-brand-teal transition-all">Cosmetic Dentistry</button>
+                <button onclick="filterServices('restorative', event)" class="tab-btn px-5 py-2.5 rounded-full text-xs font-bold border border-slate-200 text-slate-600 hover:border-brand-teal transition-all">Restorative & Emergency</button>
+            </div>
+
+            <!-- Services Grid (15 Cards) -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. Routine Dental Exam -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-magnifying-glass-tooth"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Routine Dental Exam</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Comprehensive 6-month checkup including cavity detection, oral cancer screening, and gum health assessment.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Gentle & Thorough</span>
+                        <a href="#appointment" class="hover:underline">Book Exam →</a>
+                    </div>
+                </div>
+
+                <!-- 2. New Patient Exam -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-clipboard-user"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">New Patient Exam</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        In-depth initial consultation with Dr. Maryam Tabar to establish your personalized oral health roadmap.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Personalized Plan</span>
+                        <a href="#appointment" class="hover:underline">Book Exam →</a>
+                    </div>
+                </div>
+
+                <!-- 3. Dental X-Rays -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-x-ray"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Digital Dental X-Rays</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Ultra low-radiation digital radiography for precise diagnosis of hidden decay, jawbone, and root structure.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ 90% Less Radiation</span>
+                        <a href="#appointment" class="hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 4. Teeth Cleaning -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Teeth Cleaning</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Professional prophylaxis cleaning to eliminate tartar, plaque buildup, and stubborn surface stains.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Fresh & Polished</span>
+                        <a href="#appointment" class="hover:underline">Book Cleaning →</a>
+                    </div>
+                </div>
+
+                <!-- 5. Teeth Whitening (Zoom!) -->
+                <div class="service-card service-item cosmetic bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-gold shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-gold/20 text-brand-dark flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Teeth Whitening (Zoom!)</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        In-office Philips Zoom! whitening treatment that brightens teeth up to 8 shades in under an hour.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Instant Bright Smile</span>
+                        <a href="#appointment" class="hover:underline">Book Whitening →</a>
+                    </div>
+                </div>
+
+                <!-- 6. Invisalign -->
+                <div class="service-card service-item cosmetic bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-gold shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-gold/20 text-brand-dark flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-smile-beam"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Invisalign® Clear Aligners</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Discreet, comfortable transparent aligners to straighten your smile without traditional metal braces.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Virtually Invisible</span>
+                        <a href="#appointment" class="hover:underline">Free Consultation →</a>
+                    </div>
+                </div>
+
+                <!-- 7. Veneers -->
+                <div class="service-card service-item cosmetic bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-gold shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-gold/20 text-brand-dark flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Porcelain & Composite Veneers</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Custom ultra-thin ceramic shells designed to fix chipped, discolored, or unevenly spaced teeth.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Hollywood Smile Design</span>
+                        <a href="#appointment" class="hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 8. Dental Implants -->
+                <div class="service-card service-item restorative bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-screwdriver"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Dental Implants</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Permanent, natural-looking replacement roots and crowns that restore full chewing function and appearance.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Permanent Solution</span>
+                        <a href="#appointment" class="hover:underline">Consult Dr. Tabar →</a>
+                    </div>
+                </div>
+
+                <!-- 9. Dental Crowns -->
+                <div class="service-card service-item restorative bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Dental Crowns & Bridges</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        High-strength porcelain caps to protect severely damaged teeth or bridge gaps seamlessly.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Natural Aesthetics</span>
+                        <a href="#appointment" class="hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 10. Composite Fillings -->
+                <div class="service-card service-item restorative bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Tooth-Colored Fillings</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Biocompatible, mercury-free composite fillings that blend imperceptibly with your natural tooth shade.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ 100% Mercury-Free</span>
+                        <a href="#appointment" class="hover:underline">Book Filling →</a>
+                    </div>
+                </div>
+
+                <!-- 11. LASER Therapy -->
+                <div class="service-card service-item restorative bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">LASER Dental Therapy</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Minimally invasive laser treatments for precision soft tissue contouring, cavity treatment, and fast healing.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Pain-Free Precision</span>
+                        <a href="#appointment" class="hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 12. Bioclear -->
+                <div class="service-card service-item cosmetic bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-gold shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-gold/20 text-brand-dark flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-shapes"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Bioclear Matrix Method</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Innovative conservative alternative to veneers to close black triangles, fix worn edges, and preserve tooth structure.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Minimal Drilling</span>
+                        <a href="#appointment" class="hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 13. Periodontal Maintenance -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Periodontal Maintenance</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Specialized deep cleaning and ongoing therapy to halt gum disease, protect roots, and prevent bone loss.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Protect Jawbone</span>
+                        <a href="#appointment" class="hover:underline">Book Therapy →</a>
+                    </div>
+                </div>
+
+                <!-- 14. Gum Health Maintenance -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Gum Health Maintenance</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        Tailored gum disease prevention plans to maintain pink, healthy gums and fresh breath long-term.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Preventive Wellness</span>
+                        <a href="#appointment" class="hover:underline">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- 15. Fluoride Treatment -->
+                <div class="service-card service-item preventive bg-brand-bg p-7 rounded-2xl border-t-4 border-brand-teal shadow-soft hover:shadow-hover">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-heading font-bold text-xl text-brand-dark">Fluoride Treatment</h3>
+                    <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+                        High-concentration enamel strengthening varnish to remineralize weak spots and prevent sensitivity.
+                    </p>
+                    <div class="mt-4 pt-4 border-t border-slate-200 flex justify-between items-center text-xs font-semibold text-brand-teal">
+                        <span>✦ Enamel Shield</span>
+                        <a href="#appointment" class="hover:underline">Book Treatment →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT / ECO-FRIENDLY SECTION -->
+    <section id="about" class="py-20 bg-brand-bg border-t border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Eco Highlight Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-br from-brand-teal to-brand-teal-dark rounded-3xl p-8 sm:p-10 text-white shadow-xl relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 text-white/10 text-9xl pointer-events-none">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        
+                        <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-6">
+                            <i class="fa-solid fa-certificate text-brand-gold"></i> Green Business Certified
+                        </div>
+
+                        <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-white leading-tight">
+                            Why Choose SF’s Leading Eco Dental Office?
+                        </h3>
+
+                        <p class="text-teal-100 text-sm mt-4 leading-relaxed">
+                            We believe exceptional oral healthcare shouldn’t cost the planet. Our practice combines state-of-the-art dental technology with eco-conscious protocols.
+                        </p>
+
+                        <div class="space-y-4 mt-6">
+                            <div class="flex items-start gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-brand-gold text-brand-dark flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-radiation"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-white">90% Less Radiation</h4>
+                                    <p class="text-xs text-teal-100">Digital X-rays drastically reduce exposure compared to legacy film.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-brand-gold text-brand-dark flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-file-shield"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-white">100% Paperless Workflows</h4>
+                                    <p class="text-xs text-teal-100">Digital intake charts & electronic claims save thousands of trees annually.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-7 h-7 rounded-lg bg-brand-gold text-brand-dark flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-vial-virus"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-white">Non-Toxic & Mercury Free</h4>
+                                    <p class="text-xs text-teal-100">Biocompatible, amalgam-free composite restorations safe for body and Earth.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-6 border-t border-white/20 flex items-center gap-3">
+                            <div class="text-brand-gold text-3xl"><i class="fa-solid fa-seedling"></i></div>
+                            <div>
+                                <p class="text-xs font-bold">Located at 100 Montgomery St</p>
+                                <p class="text-[11px] text-teal-200">Financial District • SF BART Accessible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-brand-teal text-xs font-extrabold tracking-widest uppercase bg-brand-teal-light px-3 py-1 rounded-full">
+                        Our Mission & Standards
+                    </span>
+
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark">
+                        Modern Patient Care Built Around Trust, Education & Comfort
+                    </h2>
+
+                    <p class="text-slate-600 leading-relaxed text-base">
+                        At <strong class="text-brand-dark">Digital Dental Practice</strong>, dentistry is more than clinical procedures. We prioritize building lasting, transparent relationships with every patient who steps into our Financial District suite.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <i class="fa-solid fa-ear-listen text-brand-teal text-xl mb-2"></i>
+                            <h4 class="font-bold text-brand-dark text-sm">We Listen First</h4>
+                            <p class="text-xs text-slate-500 mt-1">We take time to understand your unique anxiety, goals, and financial needs.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <i class="fa-solid fa-graduation-cap text-brand-teal text-xl mb-2"></i>
+                            <h4 class="font-bold text-brand-dark text-sm">Patient Education</h4>
+                            <p class="text-xs text-slate-500 mt-1">You’ll see clear intraoral camera photos so you can make informed choices.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <i class="fa-solid fa-file-invoice-dollar text-brand-teal text-xl mb-2"></i>
+                            <h4 class="font-bold text-brand-dark text-sm">No Hidden Fees</h4>
+                            <p class="text-xs text-slate-500 mt-1">Insured & uninsured friendly options with upfront, transparent cost estimates.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-white border border-slate-200 shadow-sm">
+                            <i class="fa-solid fa-clock-rotate-left text-brand-teal text-xl mb-2"></i>
+                            <h4 class="font-bold text-brand-dark text-sm">On-Time Appointments</h4>
+                            <p class="text-xs text-slate-500 mt-1">Designed for busy Financial District professionals — M-F 8am to 7pm.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-4">
+                        <a href="#appointment" class="px-6 py-3 rounded-xl bg-brand-teal text-white font-bold text-xs uppercase tracking-wider hover:bg-brand-teal-dark transition-colors">
+                            Schedule Your Visit
+                        </a>
+                        <span class="text-xs text-slate-500 font-semibold">
+                            <i class="fa-solid fa-map-pin text-brand-gold"></i> 100 Montgomery St, Ste 350
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DOCTOR SHOWCASE (Dr. Maryam Tabar) -->
+    <section id="doctor" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="bg-gradient-to-r from-brand-bg to-teal-50/50 rounded-3xl border border-slate-200/80 p-8 sm:p-12 shadow-soft">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Doctor Photo -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Dr. Maryam Tabar Dentist San Francisco" 
+                                 class="w-full h-[420px] object-cover object-top">
+                            
+                            <div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl border border-slate-200 text-brand-dark">
+                                <p class="text-xs font-extrabold">Dr. Maryam Tabar, DDS</p>
+                                <p class="text-[10px] text-brand-teal font-semibold">Lead Dentist & Eco Pioneer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor Bio & Philosophy -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <span class="text-brand-teal text-xs font-extrabold tracking-widest uppercase bg-brand-teal-light px-3 py-1 rounded-full">
+                            Meet Your Doctor
+                        </span>
+
+                        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark">
+                            Dr. Maryam Tabar
+                        </h2>
+
+                        <p class="text-base text-slate-700 leading-relaxed font-medium">
+                            <em class="text-brand-teal">“My core devotion is listening to my patients' concerns, educating them about their options, and creating personalized treatment plans that fit seamlessly into their lives.”</em>
+                        </p>
+
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Dr. Maryam Tabar has served San Francisco downtown professionals and families for years with a warm, gentle touch. She believes dentistry should be stress-free, pain-free, and aligned with sustainable environmental practices.
+                        </p>
+
+                        <!-- Doctor Key Attributes -->
+                        <div class="grid sm:grid-cols-2 gap-3 pt-2">
+                            <div class="flex items-center gap-2.5 text-xs font-bold text-slate-700 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-heart text-red-500"></i> Devoted & Compassionate Care
+                            </div>
+                            <div class="flex items-center gap-2.5 text-xs font-bold text-slate-700 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-graduation-cap text-brand-teal"></i> Personalized Treatment Plans
+                            </div>
+                            <div class="flex items-center gap-2.5 text-xs font-bold text-slate-700 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-sparkles text-brand-gold"></i> Gentle Cosmetic Expert
+                            </div>
+                            <div class="flex items-center gap-2.5 text-xs font-bold text-slate-700 bg-white p-3 rounded-lg border border-slate-200">
+                                <i class="fa-solid fa-leaf text-emerald-600"></i> Sustainable Dentistry Lead
+                            </div>
+                        </div>
+
+                        <!-- CTA -->
+                        <div class="pt-4 flex flex-wrap items-center gap-4">
+                            <a href="#appointment" class="px-6 py-3 rounded-xl bg-brand-gold hover:bg-brand-gold-hover text-brand-dark font-extrabold text-xs uppercase tracking-wider shadow-md transition-all">
+                                Request Consultation with Dr. Tabar
+                            </a>
+                            <a href="tel:4153622400" class="text-xs font-bold text-brand-teal hover:underline flex items-center gap-1.5">
+                                <i class="fa-solid fa-phone"></i> Call (415) 362-2400
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PATIENT REVIEWS & TESTIMONIALS -->
+    <section id="reviews" class="py-20 bg-brand-bg border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-brand-teal text-xs font-extrabold tracking-widest uppercase bg-brand-teal-light px-3 py-1 rounded-full">
+                    SF Financial District Reviews
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark mt-3">
+                    What Our Patients Say
+                </h2>
+                <div class="flex items-center justify-center gap-1 text-brand-gold text-lg mt-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-xs font-bold text-slate-700 ml-2">4.9 / 5 Rating on Google & Yelp</span>
+                </div>
+            </div>
+
+            <!-- Review Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-soft space-y-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex text-brand-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Verified Patient</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed italic">
+                        “Dr. Tabar is incredible! I work right on Montgomery Street and squeezed in a cleaning during lunch. The office is eco-friendly, super clean, and everyone is warm. Best dentist in SF!”
+                    </p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-extrabold text-brand-dark">Sarah M.</p>
+                            <p class="text-[10px] text-slate-400">Financial District Professional</p>
+                        </div>
+                        <i class="fa-solid fa-building text-slate-300 text-sm"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-soft space-y-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex text-brand-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Emergency Patient</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed italic">
+                        “Had a terrible sudden toothache on Thursday morning. Digital Dental Practice saw me same-day! Dr. Maryam Tabar explained everything clearly and fixed my filling painlessly.”
+                    </p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-extrabold text-brand-dark">David K.</p>
+                            <p class="text-[10px] text-slate-400">Same-Day Emergency Care</p>
+                        </div>
+                        <i class="fa-solid fa-bolt text-brand-gold text-sm"></i>
+                    </div>
+                </div>
+
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-soft space-y-4">
+                    <div class="flex justify-between items-center">
+                        <div class="flex text-brand-gold text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded">Verified Patient</span>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed italic">
+                        “Loved that they are eco-friendly with digital X-rays and paperless forms. Zoom! whitening gave me results for my wedding. Highly recommend Dr. Tabar!”
+                    </p>
+                    <div class="pt-2 border-t border-slate-100 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-extrabold text-brand-dark">Elena R.</p>
+                            <p class="text-[10px] text-slate-400">Zoom! Whitening & Invisalign</p>
+                        </div>
+                        <i class="fa-solid fa-sparkles text-brand-gold text-sm"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION & CONTACT SECTION (Teal Background #2C7B7B) -->
+    <section id="contact" class="py-20 bg-brand-teal text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="bg-white/10 text-brand-gold text-xs font-extrabold tracking-widest uppercase px-3 py-1 rounded-full border border-white/20">
+                    Visit Our Practice
+                </span>
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mt-3">
+                    Contact & Location Details
+                </h2>
+                <p class="text-teal-100 text-sm mt-2">
+                    Conveniently located at 100 Montgomery St, Suite 350 in San Francisco’s Financial District.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-10 items-start">
+                
+                <!-- Contact Info Cards (Left Column) -->
+                <div class="lg:col-span-5 space-y-4">
+                    
+                    <!-- Address Card -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold text-brand-dark flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base text-white">Office Address</h3>
+                            <p class="text-sm text-teal-100 mt-1">100 Montgomery St, Ste 350</p>
+                            <p class="text-sm text-teal-100">San Francisco, CA 94104</p>
+                            <p class="text-xs text-brand-gold font-semibold mt-2">
+                                <i class="fa-solid fa-train"></i> Right near Montgomery Street Station (BART/MUNI)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Card -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold text-brand-dark flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base text-white">Direct Phone</h3>
+                            <a href="tel:4153622400" class="text-lg font-extrabold text-brand-gold hover:underline block mt-1">
+                                (415) 362-2400
+                            </a>
+                            <p class="text-xs text-teal-100 mt-1">Same-Day Emergency Dental Appointments</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold text-brand-dark flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base text-white">Email Address</h3>
+                            <a href="mailto:tomydentist@yahoo.com" class="text-sm font-semibold text-teal-100 hover:text-white hover:underline block mt-1">
+                                tomydentist@yahoo.com
+                            </a>
+                            <p class="text-xs text-teal-200 mt-1">Fast replies within 1 business day</p>
+                        </div>
+                    </div>
+
+                    <!-- Hours Card -->
+                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-brand-gold text-brand-dark flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="font-bold text-base text-white">Office Hours</h3>
+                            <div class="mt-2 space-y-1 text-xs text-teal-100">
+                                <div class="flex justify-between"><span>Monday – Friday:</span> <strong class="text-white">8:00 AM – 7:00 PM</strong></div>
+                                <div class="flex justify-between"><span>Saturday:</span> <span class="text-teal-300">By Appointment</span></div>
+                                <div class="flex justify-between"><span>Sunday:</span> <span class="text-teal-300">Closed</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Interactive Booking Form & Map Box (Right Column) -->
+                <div class="lg:col-span-7 bg-white text-brand-dark p-8 sm:p-10 rounded-3xl shadow-2xl" id="appointment">
+                    
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <h3 class="font-heading text-2xl font-extrabold text-brand-dark">
+                                Request an Appointment
+                            </h3>
+                            <p class="text-xs text-slate-500 mt-1">
+                                Fast 60-second booking form • We accept insured & uninsured patients
+                            </p>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-brand-teal-light text-brand-teal flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                    </div>
+
+                    <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name *</label>
+                                <input type="text" required placeholder="e.g. John Smith" 
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+                                <input type="tel" required placeholder="(415) 000-0000" 
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address *</label>
+                                <input type="email" required placeholder="john@example.com" 
+                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Requested *</label>
+                                <select required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm bg-white">
+                                    <option value="">Select a service...</option>
+                                    <option value="routine">Routine Dental Exam & Cleaning</option>
+                                    <option value="new-patient">New Patient Comprehensive Exam</option>
+                                    <option value="emergency">Same-Day Emergency Care</option>
+                                    <option value="whitening">Teeth Whitening (Zoom!)</option>
+                                    <option value="invisalign">Invisalign® Consultation</option>
+                                    <option value="veneers">Porcelain Veneers</option>
+                                    <option value="implants">Dental Implants</option>
+                                    <option value="fillings">Tooth Restoration / Fillings</option>
+                                    <option value="other">Other Dental Care</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Preferred Day</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm bg-white">
+                                    <option value="asap">As soon as possible</option>
+                                    <option value="mon">Monday</option>
+                                    <option value="tue">Tuesday</option>
+                                    <option value="wed">Wednesday</option>
+                                    <option value="thu">Thursday</option>
+                                    <option value="fri">Friday</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Patient Status</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm bg-white">
+                                    <option value="new">New Patient</option>
+                                    <option value="returning">Returning Patient</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Additional Notes / Symptoms</label>
+                            <textarea rows="3" placeholder="Tell us if you have toothache, sensitivity, insurance questions, or prefer morning/afternoon..." 
+                                      class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-teal text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-4 rounded-xl bg-brand-gold hover:bg-brand-gold-hover text-brand-dark font-extrabold text-sm uppercase tracking-wider shadow-gold transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Appointment Request
+                        </button>
+
+                        <p class="text-[11px] text-center text-slate-400 mt-2">
+                            🔒 Your personal details are confidential. Our office will call or email to confirm your exact time.
+                        </p>
+                    </form>
+
+                    <!-- Success Alert Modal / Box -->
+                    <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-800 text-center space-y-2">
+                        <i class="fa-solid fa-circle-check text-2xl text-emerald-600"></i>
+                        <h4 class="font-bold text-sm">Thank You for Choosing Digital Dental Practice!</h4>
+                        <p class="text-xs">Your appointment request has been submitted. Our team will contact you shortly at (415) 362-2400 to finalize your scheduling.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GOLD CTA SECTION -->
+    <section class="bg-brand-gold py-16 text-brand-dark">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+            <span class="bg-brand-dark text-white text-[11px] font-extrabold tracking-widest uppercase px-3.5 py-1.5 rounded-full">
+                San Francisco Financial District
+            </span>
+            
+            <h2 class="font-heading text-3xl sm:text-5xl font-extrabold text-brand-dark tracking-tight leading-tight">
+                Ready to Experience Premier Eco-Friendly Dentistry?
+            </h2>
+
+            <p class="text-base sm:text-lg text-slate-800 font-medium max-w-2xl mx-auto">
+                Join hundreds of satisfied patients in San Francisco. Accepting new insured and uninsured patients today.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                <a href="tel:4153622400" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-dark hover:bg-black text-white font-extrabold text-sm uppercase tracking-wider shadow-xl transition-all flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-phone text-brand-gold"></i> Call (415) 362-2400 Now
+                </a>
+                <a href="#appointment" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-white hover:bg-slate-100 text-brand-dark font-extrabold text-sm uppercase tracking-wider border border-brand-dark/20 shadow-md transition-all flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-calendar"></i> Reserve Online
+                </a>
+            </div>
+
+            <p class="text-xs font-semibold text-slate-800">
+                📍 100 Montgomery St, Ste 350, San Francisco, CA 94104 • Near Montgomery BART
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-slate-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-teal text-white flex items-center justify-center text-lg font-bold">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <span class="font-heading font-extrabold text-xl text-white tracking-tight">
+                            Digital Dental <span class="text-brand-teal">Practice</span>
+                        </span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Premier eco-friendly dental practice in San Francisco's Financial District led by Dr. Maryam Tabar. Sustainable, low-radiation, high-precision oral care.
+                    </p>
+                    <div class="text-xs text-slate-300 space-y-1 pt-2">
+                        <p><strong class="text-white">Doctor:</strong> Dr. Maryam Tabar</p>
+                        <p><strong class="text-white">Address:</strong> 100 Montgomery St, Ste 350, SF, CA 94104</p>
+                        <p><strong class="text-white">Phone:</strong> (415) 362-2400</p>
+                        <p><strong class="text-white">Email:</strong> tomydentist@yahoo.com</p>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Quick Navigation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Dental Services (15+)</a></li>
+                        <li><a href="#about" class="hover:text-brand-gold transition-colors">Eco Practice Benefits</a></li>
+                        <li><a href="#doctor" class="hover:text-brand-gold transition-colors">Dr. Maryam Tabar</a></li>
+                        <li><a href="#reviews" class="hover:text-brand-gold transition-colors">Patient Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-brand-gold transition-colors">Location & Hours</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Key Services -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Top Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Routine & New Patient Exams</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Zoom! Teeth Whitening</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Invisalign® Aligners</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Porcelain Veneers & Crowns</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Same-Day Emergency Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Hours & Transit -->
+                <div class="space-y-3">
+                    <h4 class="font-bold text-white text-sm uppercase tracking-wider">Hours & Location</h4>
+                    <div class="text-xs space-y-1.5 text-slate-400">
+                        <p class="text-white font-semibold">Monday – Friday:</p>
+                        <p>8:00 AM – 7:00 PM</p>
+                        <p class="text-white font-semibold pt-2">Transit:</p>
+                        <p>Montgomery St BART / MUNI Station (2 min walk)</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Copyright & Disclaimer -->
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center space-y-3 text-xs text-slate-500">
+                <p>© 2026 Digital Dental Practice — Dr. Maryam Tabar. All rights reserved.</p>
+                <p class="text-[11px] text-brand-gold/80">✦ Preview created by Muhammad Siddique — Not the actual website ✦</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY -->
+    <script>
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Service filtering tabs
+        function filterServices(category, event) {
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            event.currentTarget.classList.add('active');
+
+            const items = document.querySelectorAll('.service-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Form submission handling
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('booking-form').classList.add('hidden');
+            document.getElementById('form-success').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

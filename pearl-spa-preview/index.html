@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Spa & Sauna — San Francisco's Premier Women's-Only Spa & Jimjilbang</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#2D2D2D',
+                            darker: '#1A1A1A',
+                            green: '#7C8F52',
+                            'green-hover': '#687943',
+                            sage: '#9CAF6E',
+                            'light-sage': '#F2F5EC',
+                            cream: '#FBF9F5',
+                            sand: '#F3EFEA',
+                            gold: '#D4AF37'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Animations & Styles */
+        .glass-header {
+            background: rgba(45, 45, 45, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .glass-dark {
+            background: rgba(45, 45, 45, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0.7) 0%, rgba(45, 45, 45, 0.85) 70%, rgba(45, 45, 45, 1) 100%);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #2D2D2D;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #7C8F52;
+            border-radius: 3px;
+        }
+
+        /* Fade-in scroll animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gold gradient text */
+        .gold-text {
+            background: linear-gradient(135deg, #E6CA65 0%, #7C8F52 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans selection:bg-brand-green selection:text-white antialiased custom-scrollbar">
+
+    <!-- PREVIEW BANNER REQUIRED -->
+    <div style="background: #7C8F52; color: white; text-align: center; padding: 10px; font-size: 13px; font-family: Arial, sans-serif;">✦ Preview created by Muhammad Siddique — Not the actual website ✦</div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 transition-all duration-300 glass-header border-b border-white/10 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full border-2 border-brand-green flex items-center justify-center bg-brand-dark group-hover:border-white transition-colors duration-300">
+                        <i class="fa-solid font-serif text-brand-green text-xl font-bold group-hover:text-white transition-colors">P</i>
+                    </div>
+                    <div>
+                        <span class="font-serif text-2xl tracking-widest uppercase font-semibold text-white block leading-none">PEARL SPA</span>
+                        <span class="text-[10px] tracking-[0.25em] uppercase text-brand-sage font-medium block mt-1">& SAUNA • SAN FRANCISCO</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+                    <a href="#about" class="text-gray-300 hover:text-brand-sage transition-colors duration-200 py-2">About</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand-sage transition-colors duration-200 py-2">Treatments</a>
+                    <a href="#amenities" class="text-gray-300 hover:text-brand-sage transition-colors duration-200 py-2">Jimjilbang</a>
+                    <a href="#experience" class="text-gray-300 hover:text-brand-sage transition-colors duration-200 py-2">The Experience</a>
+                    <a href="#reviews" class="text-gray-300 hover:text-brand-sage transition-colors duration-200 py-2">Reviews</a>
+                    <a href="#contact" class="text-gray-300 hover:text-brand-sage transition-colors duration-200 py-2">Contact</a>
+                </nav>
+
+                <!-- Header Actions -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="tel:4155807142" class="text-xs font-semibold text-gray-300 hover:text-white flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-brand-green"></i> (415) 580-7142
+                    </a>
+                    <a href="#booking-modal" onclick="openBookingModal()" class="bg-brand-green hover:bg-brand-green-hover text-white text-xs font-bold tracking-widest uppercase px-6 py-3 rounded-full shadow-lg hover:shadow-brand-green/30 transition-all duration-300 transform hover:-translate-y-0.5">
+                        Book Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-200 hover:text-white focus:outline-none p-2" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-darker border-b border-white/10 px-4 pt-4 pb-6 space-y-4">
+            <a href="#about" class="mobile-nav-link block text-sm uppercase tracking-wider text-gray-300 hover:text-brand-green py-2 border-b border-white/5">About Us</a>
+            <a href="#services" class="mobile-nav-link block text-sm uppercase tracking-wider text-gray-300 hover:text-brand-green py-2 border-b border-white/5">Treatments & Services</a>
+            <a href="#amenities" class="mobile-nav-link block text-sm uppercase tracking-wider text-gray-300 hover:text-brand-green py-2 border-b border-white/5">Bathhouse Amenities</a>
+            <a href="#experience" class="mobile-nav-link block text-sm uppercase tracking-wider text-gray-300 hover:text-brand-green py-2 border-b border-white/5">The Experience</a>
+            <a href="#reviews" class="mobile-nav-link block text-sm uppercase tracking-wider text-gray-300 hover:text-brand-green py-2 border-b border-white/5">Reviews</a>
+            <a href="#contact" class="mobile-nav-link block text-sm uppercase tracking-wider text-gray-300 hover:text-brand-green py-2 border-b border-white/5">Contact & Hours</a>
+            <div class="pt-2 flex flex-col gap-3">
+                <a href="tel:4155807142" class="text-center text-sm font-semibold text-brand-sage py-2 border border-brand-sage/40 rounded-full">
+                    <i class="fa-solid fa-phone mr-2"></i> Call (415) 580-7142
+                </a>
+                <a href="#booking-modal" onclick="openBookingModal()" class="text-center bg-brand-green text-white font-bold text-xs uppercase tracking-widest py-3 rounded-full">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-brand-dark">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=80" alt="Pearl Spa Sanctuary" class="w-full h-full object-cover object-center scale-105 transition-transform duration-10000 ease-linear">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-20">
+            
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-sage text-xs font-semibold tracking-widest uppercase mb-8 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                San Francisco's Premier Women's-Only Spa
+            </div>
+
+            <!-- Title -->
+            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal leading-tight tracking-wide mb-6">
+                Korean Traditions.<br>
+                <span class="italic font-light text-brand-sage">Unparalleled Serenity.</span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-base sm:text-xl text-gray-200 font-light leading-relaxed mb-10">
+                A unique two-story women's-only spa and Korean-style <span class="text-white font-medium">jimjilbang</span> bathhouse. Combining traditional Korean beauty rituals with modern relaxation in the heart of San Francisco.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto mb-16">
+                <a href="#services" class="w-full sm:w-auto bg-brand-green hover:bg-brand-green-hover text-white text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    Explore Treatments
+                </a>
+                <a href="#booking-modal" onclick="openBookingModal()" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full transition-all duration-300">
+                    Book Appointment
+                </a>
+            </div>
+
+            <!-- Floating Info Ribbon -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-white/15 text-left max-w-4xl mx-auto">
+                <div class="flex items-center gap-3 bg-black/30 backdrop-blur-sm p-3.5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-sage shrink-0">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase text-gray-400 font-semibold tracking-wider">Sanctuary</div>
+                        <div class="text-sm font-semibold text-white">Women's-Only</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 bg-black/30 backdrop-blur-sm p-3.5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-sage shrink-0">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase text-gray-400 font-semibold tracking-wider">Bonus Included</div>
+                        <div class="text-sm font-semibold text-white">2 Hours Access</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 bg-black/30 backdrop-blur-sm p-3.5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-sage shrink-0">
+                        <i class="fa-solid fa-map-pin"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase text-gray-400 font-semibold tracking-wider">Location</div>
+                        <div class="text-sm font-semibold text-white">1654 Post St, SF</div>
+                    </div>
+                </div>
+
+                <div class="flex items-center gap-3 bg-black/30 backdrop-blur-sm p-3.5 rounded-xl border border-white/5">
+                    <div class="w-10 h-10 rounded-full bg-brand-green/20 flex items-center justify-center text-brand-sage shrink-0">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs uppercase text-gray-400 font-semibold tracking-wider">Hours</div>
+                        <div class="text-sm font-semibold text-white">Mon-Sun 6:45am-7:45pm</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll down hint -->
+        <a href="#about" class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 hover:text-white transition-colors animate-bounce">
+            <i class="fa-solid fa-chevron-down text-xl"></i>
+        </a>
+    </section>
+
+    <!-- KEY FEATURES HIGHLIGHT STRIP -->
+    <section class="bg-brand-dark py-12 border-b border-white/10 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+                <div class="pt-4 md:pt-0 px-4">
+                    <div class="text-brand-sage text-2xl mb-2"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="font-serif text-xl font-medium mb-1">Women's-Only Sanctuary</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">A private, safe, and tranquil sanctuary designed exclusively for women.</p>
+                </div>
+                <div class="pt-4 md:pt-0 px-4">
+                    <div class="text-brand-sage text-2xl mb-2"><i class="fa-solid fa-hot-tub-person"></i></div>
+                    <h3 class="font-serif text-xl font-medium mb-1">Korean Traditions</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Two levels featuring herbal steam saunas, hot soaking tubs, and jade relaxation rooms.</p>
+                </div>
+                <div class="pt-4 md:pt-0 px-4">
+                    <div class="text-brand-sage text-2xl mb-2"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                    <h3 class="font-serif text-xl font-medium mb-1">Expert Therapists</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Highly trained exfoliation and massage specialists providing customized care.</p>
+                </div>
+                <div class="pt-4 md:pt-0 px-4">
+                    <div class="text-brand-sage text-2xl mb-2"><i class="fa-solid fa-gift"></i></div>
+                    <h3 class="font-serif text-xl font-medium mb-1">Full Amenities Included</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Every service includes 2 hours of complimentary access to bathhouse amenities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-brand-cream relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-6 relative reveal">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80" alt="Pearl Spa Atmosphere" class="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700">
+                    </div>
+                    
+                    <!-- Overlapping Accent Card -->
+                    <div class="absolute -bottom-8 -right-4 sm:-right-8 z-20 bg-brand-dark text-white p-6 rounded-2xl shadow-xl max-w-xs border border-white/10 hidden sm:block">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl font-serif text-brand-green font-bold">2016</div>
+                            <div class="text-xs tracking-wider uppercase text-gray-300 border-l border-white/20 pl-4">
+                                Opened in San Francisco's Japantown
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative Background Square -->
+                    <div class="absolute -top-6 -left-6 w-48 h-48 bg-brand-light-sage rounded-2xl -z-0"></div>
+                </div>
+
+                <!-- Text Content Side -->
+                <div class="lg:col-span-6 space-y-6 reveal">
+                    <div class="inline-block text-xs font-bold uppercase tracking-[0.25em] text-brand-green">
+                        ✦ About Pearl Spa & Sauna
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl text-brand-dark leading-tight font-normal">
+                        San Francisco's Premier Women's-Only Spa
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed font-light text-base sm:text-lg">
+                        Opened in 2016, Pearl Spa combines Korean beauty traditions with American relaxation. A unique two-story women's-only spa and Korean-style jimjilbang bathhouse located in San Francisco.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed font-light text-base">
+                        Our dedicated team of expert therapists is here to help you achieve peace of mind in a serene atmosphere. From invigorating body scrubs and seaweed gel body wraps to relaxing massages tailored to your needs, every treatment includes 2 hours amenities access.
+                    </p>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-3 gap-6 pt-6 border-t border-gray-200">
+                        <div>
+                            <div class="font-serif text-3xl font-bold text-brand-green">2016</div>
+                            <div class="text-xs uppercase tracking-wider text-gray-500 font-semibold mt-1">Established</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-3xl font-bold text-brand-green">2</div>
+                            <div class="text-xs uppercase tracking-wider text-gray-500 font-semibold mt-1">Story Spa</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-3xl font-bold text-brand-green">100%</div>
+                            <div class="text-xs uppercase tracking-wider text-gray-500 font-semibold mt-1">Women's Only</div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="#services" class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-brand-dark hover:text-brand-green transition-colors group">
+                            <span>Explore Services & Treatments</span>
+                            <i class="fa-solid fa-arrow-right text-brand-green group-hover:translate-x-2 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- JIMJILBANG BATHHOUSE AMENITIES SHOWCASE -->
+    <section id="amenities" class="py-24 bg-brand-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-sage block mb-2">✦ Key Features</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal leading-tight">Two-Story Women's-Only Spa & Bathhouse</h2>
+                <p class="text-gray-400 mt-4 text-sm sm:text-base font-light">2 hours amenities access included with every service. Relax in our mineral soaking tubs and dry saunas before or after your scheduled service.</p>
+            </div>
+
+            <!-- Grid of Amenities -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="group bg-brand-darker rounded-2xl overflow-hidden border border-white/10 hover:border-brand-sage/50 transition-all duration-500 shadow-xl hover:-translate-y-2 reveal">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Hot Soaking Baths" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-brand-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Level 1</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-medium text-white mb-2 group-hover:text-brand-sage transition-colors">Hot & Cold Mineral Baths</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">Hydrotherapy pools designed to ease muscle stiffness, improve circulation, and prepare your body for body scrubs and massages.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group bg-brand-darker rounded-2xl overflow-hidden border border-white/10 hover:border-brand-sage/50 transition-all duration-500 shadow-xl hover:-translate-y-2 reveal">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" alt="Jimjilbang Saunas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-brand-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Level 1 & 2</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-medium text-white mb-2 group-hover:text-brand-sage transition-colors">Korean Jimjilbang Saunas</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">Therapeutic heat rooms infused with natural clay and mineral salts to release deep impurities and foster quiet peace of mind.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group bg-brand-darker rounded-2xl overflow-hidden border border-white/10 hover:border-brand-sage/50 transition-all duration-500 shadow-xl hover:-translate-y-2 reveal">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1591343393572-3507c8d8396c?auto=format&fit=crop&w=800&q=80" alt="Lounges & Beauty Powder Room" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-brand-green/90 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">Level 2</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-serif text-2xl font-medium text-white mb-2 group-hover:text-brand-sage transition-colors">Relaxation Lounge & Powder Room</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">Comfortable quiet lounges to rest, alongside fully equipped beauty powder rooms with premium hair dryers, lotions, and amenities.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES & TREATMENTS SECTION -->
+    <section id="services" class="py-24 bg-brand-sand relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12 reveal">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-green block mb-2">✦ Spa Menu</span>
+                <h2 class="font-serif text-3xl sm:text-5xl text-brand-dark font-normal">Our Treatments & Services</h2>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">2 hours amenities access included with every service! Arrive early to enjoy our baths and saunas before your session.</p>
+            </div>
+
+            <!-- Service Category Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12 reveal">
+                <button onclick="filterServices('all')" class="service-tab active px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-dark text-white border border-brand-dark transition-all duration-300">
+                    All Services
+                </button>
+                <button onclick="filterServices('wraps')" class="service-tab px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gray-700 border border-gray-300 hover:border-brand-green transition-all duration-300">
+                    Body Wraps
+                </button>
+                <button onclick="filterServices('massages')" class="service-tab px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gray-700 border border-gray-300 hover:border-brand-green transition-all duration-300">
+                    Massages
+                </button>
+                <button onclick="filterServices('scrubs')" class="service-tab px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-gray-700 border border-gray-300 hover:border-brand-green transition-all duration-300">
+                    Body Scrubs
+                </button>
+            </div>
+
+            <!-- Services Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1: Body Wraps -->
+                <div class="service-card-item wraps bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 reveal">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="Body Wraps" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 bg-brand-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                2 Hours Access Included
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-semibold text-brand-dark">Body Wraps</h3>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-green uppercase tracking-wider mb-3">Seaweed Gel Massage Treatment</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                                Gently wrapped in seaweed gel with soothing extracts massaged into your skin for deep nourishment, hydration, and gentle detoxification.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block uppercase">Included</span>
+                            <span class="text-sm font-semibold text-brand-dark">2 Hours Amenities</span>
+                        </div>
+                        <button onclick="openBookingModal('Body Wraps (Seaweed Gel Massage)')" class="bg-brand-dark hover:bg-brand-green text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-full transition-colors duration-300">
+                            Book Wrap
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: Massages -->
+                <div class="service-card-item massages bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 reveal">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=800&q=80" alt="Massages" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 bg-brand-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                2 Hours Access Included
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-semibold text-brand-dark">Massages</h3>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-green uppercase tracking-wider mb-3">Light Relaxing to Firm Pressure</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                                From light, relaxing strokes to firm, slow pressure — our expert therapists tailor every massage session to your exact personal preferences and needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block uppercase">Included</span>
+                            <span class="text-sm font-semibold text-brand-dark">2 Hours Amenities</span>
+                        </div>
+                        <button onclick="openBookingModal('Massages (Light Relaxing to Firm Pressure)')" class="bg-brand-dark hover:bg-brand-green text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-full transition-colors duration-300">
+                            Book Massage
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: Body Scrubs -->
+                <div class="service-card-item scrubs bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 reveal">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80" alt="Body Scrubs" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 bg-brand-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                2 Hours Access Included
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-semibold text-brand-dark">Body Scrubs</h3>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-green uppercase tracking-wider mb-3">Full-Body Exfoliation</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                                Traditional full-body Korean scrubs that thoroughly exfoliate, rejuvenate, and leave your skin feeling remarkably smooth, refreshed, and soft.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block uppercase">Included</span>
+                            <span class="text-sm font-semibold text-brand-dark">2 Hours Amenities</span>
+                        </div>
+                        <button onclick="openBookingModal('Body Scrubs (Full-Body Exfoliation)')" class="bg-brand-dark hover:bg-brand-green text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-full transition-colors duration-300">
+                            Book Scrub
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Card 4: Pearl Scrub & Seaweed Wrap Combo -->
+                <div class="service-card-item scrubs wraps bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 reveal">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Scrub & Wrap Combination" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 bg-brand-gold text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                Signature Combo
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-semibold text-brand-dark">Pearl Scrub & Wrap Combo</h3>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-green uppercase tracking-wider mb-3">Full Body Exfoliation + Seaweed Wrap</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                                Combine our invigorating full-body Korean exfoliation scrub with our soothing seaweed gel body wrap for the ultimate head-to-toe renewal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block uppercase">Included</span>
+                            <span class="text-sm font-semibold text-brand-dark">2 Hours Amenities</span>
+                        </div>
+                        <button onclick="openBookingModal('Pearl Scrub & Wrap Combo')" class="bg-brand-dark hover:bg-brand-green text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-full transition-colors duration-300">
+                            Book Combo
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Card 5: Deep Tissue & Firm Pressure Massage -->
+                <div class="service-card-item massages bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 reveal">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80" alt="Firm Pressure Massage" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 bg-brand-green text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                Deep Tension Relief
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-semibold text-brand-dark">Firm Pressure Massage</h3>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-green uppercase tracking-wider mb-3">Targeted Muscle Release</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                                Focused, firm pressure targeting stubborn tightness, shoulder knots, and chronic stress to melt away deep muscular pain.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block uppercase">Included</span>
+                            <span class="text-sm font-semibold text-brand-dark">2 Hours Amenities</span>
+                        </div>
+                        <button onclick="openBookingModal('Firm Pressure Massage')" class="bg-brand-dark hover:bg-brand-green text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-full transition-colors duration-300">
+                            Book Massage
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Card 6: 2 Hours Amenities Access Pass -->
+                <div class="service-card-item scrubs wraps massages bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 flex flex-col justify-between hover:shadow-2xl transition-all duration-500 hover:-translate-y-1.5 reveal">
+                    <div>
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80" alt="Bathhouse Amenities Access" class="w-full h-full object-cover">
+                            <span class="absolute top-4 right-4 bg-brand-dark text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
+                                Bathhouse Access
+                            </span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-2xl font-semibold text-brand-dark">2 Hours Amenities Access</h3>
+                            </div>
+                            <p class="text-xs font-semibold text-brand-green uppercase tracking-wider mb-3">Included With Every Service</p>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-6 font-light">
+                                Enjoy 2 hours access to our hot soaking tubs, cold plunge, dry saunas, steam rooms, and quiet relaxation lounges with every service booked.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-100 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block uppercase">Access</span>
+                            <span class="text-sm font-semibold text-brand-dark">2 Hours Included</span>
+                        </div>
+                        <button onclick="openBookingModal('2 Hours Amenities Access Pass')" class="bg-brand-dark hover:bg-brand-green text-white text-xs font-bold tracking-wider uppercase px-5 py-2.5 rounded-full transition-colors duration-300">
+                            Reserve Access
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- THE EXPERIENCE / VISITOR GUIDE -->
+    <section id="experience" class="py-24 bg-brand-cream border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-green block mb-2">✦ Visitor Guide</span>
+                <h2 class="font-serif text-3xl sm:text-5xl text-brand-dark font-normal">How to Experience Pearl Spa</h2>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">Appointments only. Please arrive 60 minutes early to take full advantage of your 2 hours included amenities access.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative text-center group hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white font-serif font-bold text-xl flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        1
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-brand-dark">Book Appointment</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Appointments only. Call (415) 580-7142 or reserve online to guarantee your private spa session.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative text-center group hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white font-serif font-bold text-xl flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        2
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-brand-dark">Arrive 60 Mins Early</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Arrive 60 minutes prior to your service to soak in our hot mineral tubs and soften your skin.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative text-center group hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white font-serif font-bold text-xl flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        3
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-brand-dark">Expert Service</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Enjoy your tailored body wrap, massage, or Korean body scrub performed by expert therapists.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 relative text-center group hover:shadow-xl transition-all duration-300 reveal">
+                    <div class="w-12 h-12 rounded-full bg-brand-green text-white font-serif font-bold text-xl flex items-center justify-center mx-auto mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        4
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold mb-2 text-brand-dark">Sauna & Relaxation</h3>
+                    <p class="text-xs text-gray-500 leading-relaxed">Conclude your visit resting in our dry saunas, quiet lounges, and vanity rooms before returning refreshed.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / REVIEWS SECTION -->
+    <section id="reviews" class="py-24 bg-brand-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div class="inline-flex items-center gap-1 text-brand-gold text-lg mb-3">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal">What Our Guests Say</h2>
+                <p class="text-gray-400 mt-4 text-sm sm:text-base">See why San Francisco women trust Pearl Spa & Sauna on Instagram, Facebook, and Yelp.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-brand-darker p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between shadow-xl reveal">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold uppercase text-brand-sage tracking-wider">Yelp Review</span>
+                            <div class="text-brand-gold text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic text-sm leading-relaxed mb-6">
+                            "The body scrubs here are incredible! My skin has never felt softer. The fact that it's a women's-only Korean jimjilbang makes it so comfortable and relaxing. 2 hours amenities access included is a wonderful bonus!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-brand-green/30 text-brand-sage font-bold flex items-center justify-center font-serif text-lg">
+                            E
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Elena R.</div>
+                            <div class="text-[11px] text-gray-400">San Francisco, CA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-brand-darker p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between shadow-xl reveal">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold uppercase text-brand-sage tracking-wider">Facebook Review</span>
+                            <div class="text-brand-gold text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic text-sm leading-relaxed mb-6">
+                            "Pearl Spa combines Korean traditions with pure relaxation. The seaweed gel body wrap was deeply nourishing and my therapist tailored the massage pressure perfectly to my back."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-brand-green/30 text-brand-sage font-bold flex items-center justify-center font-serif text-lg">
+                            M
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Michelle T.</div>
+                            <div class="text-[11px] text-gray-400">San Francisco, CA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-brand-darker p-8 rounded-2xl border border-white/10 relative flex flex-col justify-between shadow-xl reveal">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold uppercase text-brand-sage tracking-wider">Instagram Guest</span>
+                            <div class="text-brand-gold text-xs">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 italic text-sm leading-relaxed mb-6">
+                            "A hidden two-story paradise in Japantown! Expert therapists, immaculate cleanliness, and authentic Korean spa culture. I've been coming since they opened in 2016."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+                        <div class="w-10 h-10 rounded-full bg-brand-green/30 text-brand-sage font-bold flex items-center justify-center font-serif text-lg">
+                            S
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Sophia L.</div>
+                            <div class="text-[11px] text-gray-400">San Francisco, CA</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section id="contact" class="py-24 bg-brand-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Info Cards -->
+                <div class="lg:col-span-5 space-y-6 reveal">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-[0.25em] text-brand-green block mb-2">✦ Contact & Location</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-brand-dark font-normal">Pearl Spa & Sauna</h2>
+                        <p class="text-gray-600 text-sm mt-3 leading-relaxed">Appointments only. Please call us directly or send an online request below.</p>
+                    </div>
+
+                    <!-- Contact Details Card -->
+                    <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-gray-100 space-y-6">
+                        
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-brand-light-sage text-brand-green flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase font-bold text-gray-400 tracking-wider">Address</h4>
+                                <p class="text-sm font-semibold text-brand-dark mt-1">1654 Post St, San Francisco, CA 94115</p>
+                                <p class="text-xs text-gray-500">Japantown District</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start gap-4 border-t border-gray-100 pt-6">
+                            <div class="w-10 h-10 rounded-full bg-brand-light-sage text-brand-green flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-phone text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase font-bold text-gray-400 tracking-wider">Phone Numbers</h4>
+                                <div class="mt-1 space-y-1">
+                                    <a href="tel:4155807142" class="block text-sm font-semibold text-brand-dark hover:text-brand-green transition-colors">(415) 580-7142</a>
+                                    <a href="tel:4154004141" class="block text-sm font-semibold text-brand-dark hover:text-brand-green transition-colors">(415) 400-4141</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start gap-4 border-t border-gray-100 pt-6">
+                            <div class="w-10 h-10 rounded-full bg-brand-light-sage text-brand-green flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase font-bold text-gray-400 tracking-wider">Hours</h4>
+                                <p class="text-sm font-semibold text-brand-dark mt-1">Mon-Sun 6:45am-7:45pm</p>
+                                <span class="inline-block mt-2 text-[10px] font-bold uppercase tracking-wider text-brand-green bg-brand-light-sage px-2.5 py-0.5 rounded">
+                                    Appointments Only
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Social Media Links Card -->
+                    <div class="bg-brand-dark text-white p-6 rounded-2xl shadow-lg flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider block">Social Channels</span>
+                            <span class="font-serif text-lg font-medium">Instagram • Facebook • Yelp</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://instagram.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-green flex items-center justify-center text-white transition-colors" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-green flex items-center justify-center text-white transition-colors" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://yelp.com" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 hover:bg-brand-green flex items-center justify-center text-white transition-colors" aria-label="Yelp">
+                                <i class="fa-brands fa-yelp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Side: Interactive Booking Request Form & Map -->
+                <div class="lg:col-span-7 space-y-8 reveal">
+                    
+                    <!-- Appointment Request Form -->
+                    <div class="bg-white p-8 sm:p-10 rounded-3xl shadow-xl border border-gray-100">
+                        <div class="mb-8">
+                            <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-brand-dark">Request an Appointment</h3>
+                            <p class="text-xs sm:text-sm text-gray-500 mt-1">Select your service and date. Mon-Sun 6:45am-7:45pm, appointments only.</p>
+                        </div>
+
+                        <form id="appointment-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs uppercase font-bold text-gray-600 mb-2">Full Name *</label>
+                                    <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase font-bold text-gray-600 mb-2">Phone Number *</label>
+                                    <input type="tel" required placeholder="(415) 580-7142" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs uppercase font-bold text-gray-600 mb-2">Service *</label>
+                                    <select id="form-service-select" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm transition-all bg-white">
+                                        <option value="">-- Select Service --</option>
+                                        <option value="Body Wraps (seaweed gel massage)">Body Wraps (seaweed gel massage)</option>
+                                        <option value="Massages (light relaxing to firm pressure)">Massages (light relaxing to firm pressure)</option>
+                                        <option value="Body Scrubs (full-body exfoliation)">Body Scrubs (full-body exfoliation)</option>
+                                        <option value="Pearl Scrub & Wrap Combo">Pearl Scrub & Wrap Combo</option>
+                                        <option value="Firm Pressure Massage">Firm Pressure Massage</option>
+                                        <option value="2 Hours Amenities Access Pass">2 Hours Amenities Access Pass</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs uppercase font-bold text-gray-600 mb-2">Preferred Date *</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs uppercase font-bold text-gray-600 mb-2">Notes</label>
+                                <textarea rows="3" placeholder="Tell us about pressure preferences or any special notes..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-brand-green focus:ring-2 focus:ring-brand-green/20 outline-none text-sm transition-all"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-widest py-4 rounded-xl shadow-lg transition-all duration-300">
+                                Submit Appointment Request
+                            </button>
+                        </form>
+
+                        <!-- Toast Confirmation Message -->
+                        <div id="form-success-toast" class="hidden mt-6 p-4 rounded-xl bg-brand-light-sage border border-brand-green/30 text-brand-dark text-sm flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-brand-green text-xl"></i>
+                            <div>
+                                <strong class="font-bold">Thank you!</strong> Your request has been sent. We will call you to confirm your appointment time.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Container -->
+                    <div class="rounded-3xl overflow-hidden shadow-lg border border-gray-200 h-64 relative bg-gray-100">
+                        <iframe 
+                            title="Pearl Spa & Sauna Map Location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.284841961622!2d-122.43088012358896!3d37.78569801132717!2m3!1f0!0!1f0!0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858097bbf5db25%3A0xb5a0efddb2a6f445!2s1654%20Post%20St%2C%20San%20Francisco%2C%20CA%2094115!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-20 bg-gradient-to-r from-brand-dark via-brand-darker to-brand-dark text-white text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-[0.3em] text-brand-sage block">✦ Pearl Spa & Sauna</span>
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal leading-tight">San Francisco's Premier Women's-Only Spa</h2>
+            <p class="text-gray-300 text-sm sm:text-base max-w-2xl mx-auto font-light">
+                2 hours amenities access included with every service. Book your appointment now for body wraps, massages, or Korean body scrubs.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#booking-modal" onclick="openBookingModal()" class="bg-brand-green hover:bg-brand-green-hover text-white text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full shadow-2xl transition-all duration-300">
+                    Book Appointment
+                </a>
+                <a href="tel:4155807142" class="bg-white/10 hover:bg-white/20 text-white text-xs font-bold tracking-widest uppercase px-8 py-4 rounded-full border border-white/20 transition-all duration-300">
+                    Call (415) 580-7142
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-darker text-gray-400 py-16 border-t border-white/10 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full border border-brand-green flex items-center justify-center bg-brand-dark">
+                            <span class="font-serif text-brand-green font-bold text-sm">P</span>
+                        </div>
+                        <span class="font-serif text-xl font-semibold text-white tracking-widest">PEARL SPA & SAUNA</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed font-light">
+                        Opened in 2016. A unique two-story women's-only spa and Korean-style jimjilbang bathhouse combining Korean traditions with American relaxation.
+                    </p>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="text-white uppercase font-bold tracking-wider mb-4 text-xs">Quick Links</h4>
+                    <ul class="space-y-2.5">
+                        <li><a href="#about" class="hover:text-brand-sage transition-colors">About Pearl Spa</a></li>
+                        <li><a href="#services" class="hover:text-brand-sage transition-colors">Services & Treatments</a></li>
+                        <li><a href="#amenities" class="hover:text-brand-sage transition-colors">Jimjilbang Features</a></li>
+                        <li><a href="#experience" class="hover:text-brand-sage transition-colors">Visitor Guide</a></li>
+                        <li><a href="#reviews" class="hover:text-brand-sage transition-colors">Yelp & Facebook Reviews</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Hours & Info -->
+                <div>
+                    <h4 class="text-white uppercase font-bold tracking-wider mb-4 text-xs">Hours & Info</h4>
+                    <p class="text-gray-300 font-medium mb-1">Mon-Sun 6:45am-7:45pm</p>
+                    <p class="text-gray-400 mb-3">Appointments only</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        • Women's-only sanctuary<br>
+                        • Korean beauty traditions<br>
+                        • Expert therapists<br>
+                        • 2 hours amenities access included
+                    </p>
+                </div>
+
+                <!-- Col 4: Address & Phone -->
+                <div>
+                    <h4 class="text-white uppercase font-bold tracking-wider mb-4 text-xs">Contact Information</h4>
+                    <p class="text-gray-300 font-medium mb-1">1654 Post St, San Francisco, CA 94115</p>
+                    <p class="text-gray-400 mb-3">Japantown, San Francisco</p>
+                    <p class="text-gray-300">Phones:</p>
+                    <p class="text-brand-sage font-semibold">(415) 580-7142</p>
+                    <p class="text-brand-sage font-semibold">(415) 400-4141</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-gray-500 gap-4">
+                <div>
+                    © 2026 Pearl Spa & Sauna. All Rights Reserved. Preview Redesign.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram text-base"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f text-base"></i></a>
+                    <a href="https://yelp.com" target="_blank" rel="noopener" class="hover:text-white transition-colors" aria-label="Yelp"><i class="fa-brands fa-yelp text-base"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE BOOKING MODAL -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl border border-gray-100 max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Button -->
+            <button onclick="closeBookingModal()" class="absolute top-6 right-6 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-brand-light-sage text-brand-green font-bold flex items-center justify-center mx-auto mb-3 text-xl font-serif">
+                    P
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-brand-dark">Pearl Spa & Sauna</h3>
+                <p class="text-xs text-gray-500 mt-1">Mon-Sun 6:45am-7:45pm • Appointments Only</p>
+            </div>
+
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-600 mb-1.5">Selected Service</label>
+                    <input type="text" id="modal-service-name" readonly value="Body Wraps (seaweed gel massage)" class="w-full px-4 py-2.5 rounded-xl bg-brand-light-sage font-semibold text-brand-dark text-sm border border-brand-green/30 outline-none">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-600 mb-1.5">Your Name *</label>
+                        <input type="text" required placeholder="Name" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brand-green outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-600 mb-1.5">Phone *</label>
+                        <input type="tel" required placeholder="(415) 580-7142" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brand-green outline-none text-sm">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-600 mb-1.5">Preferred Date</label>
+                        <input type="date" required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brand-green outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase font-bold text-gray-600 mb-1.5">Preferred Time</label>
+                        <select required class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brand-green outline-none text-sm bg-white">
+                            <option>Morning (6:45am - 11:00am)</option>
+                            <option>Midday (11:00am - 3:00pm)</option>
+                            <option>Afternoon/Evening (3:00pm - 7:45pm)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase font-bold text-gray-600 mb-1.5">Notes</label>
+                    <textarea rows="2" placeholder="Tell us about pressure preferences..." class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-brand-green outline-none text-sm"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-xs uppercase tracking-widest py-3.5 rounded-xl shadow-lg transition-colors">
+                        Submit Appointment Request
+                    </button>
+                </div>
+            </form>
+
+            <div id="modal-success" class="hidden mt-4 p-4 bg-brand-light-sage rounded-xl border border-brand-green text-center text-xs text-brand-dark">
+                🎉 Appointment request submitted! We will call you to confirm your time slot.
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FOR INTERACTIVITY & SCROLL REVEAL -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        // Close mobile menu on click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Service Category Filtering
+        function filterServices(category) {
+            const tabs = document.querySelectorAll('.service-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-brand-dark', 'text-white');
+                tab.classList.add('bg-white', 'text-gray-700');
+            });
+
+            event.currentTarget.classList.remove('bg-white', 'text-gray-700');
+            event.currentTarget.classList.add('bg-brand-dark', 'text-white');
+
+            const items = document.querySelectorAll('.service-card-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'flex';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Booking Modal Triggers
+        function openBookingModal(serviceName = 'Body Wraps (seaweed gel massage)') {
+            const modal = document.getElementById('booking-modal');
+            const serviceInput = document.getElementById('modal-service-name');
+            if (serviceInput) serviceInput.value = serviceName;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            const successDiv = document.getElementById('modal-success');
+            if (successDiv) successDiv.classList.add('hidden');
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const toast = document.getElementById('form-success-toast');
+            toast.classList.remove('hidden');
+            e.target.reset();
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            const successDiv = document.getElementById('modal-success');
+            if (successDiv) successDiv.classList.remove('hidden');
+            setTimeout(() => {
+                closeBookingModal();
+            }, 2500);
+        }
+
+        // Scroll Reveal Animation (Intersection Observer)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

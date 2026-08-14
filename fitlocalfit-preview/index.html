@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fit LOCAL fit | Your LOCAL Neighborhood Gym & Yoga Studio - San Francisco</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            DEFAULT: '#d95b34',
+                            hover: '#c04a25',
+                            light: '#f47953',
+                            bg: '#121212',
+                            card: '#1a1a1a',
+                            surface: '#242424',
+                            border: '#333333'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Bebas Neue', 'cursive', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .orange-glow {
+            box-shadow: 0 0 35px rgba(217, 91, 52, 0.25);
+        }
+        .orange-glow-hover:hover {
+            box-shadow: 0 0 30px rgba(217, 91, 52, 0.4);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d95b34;
+        }
+    </style>
+</head>
+<body class="bg-[#121212] text-gray-200 font-sans antialiased selection:bg-[#d95b34] selection:text-white">
+
+    <!-- REQUIRED PREVIEW BANNER -->
+    <div style="background: #1a1a1a; color: #fff; text-align: center; padding: 10px; font-size: 13px; letter-spacing: 0.5px;">✦ Preview created by Muhammad Siddique — Not the actual website ✦</div>
+
+    <!-- Announcement Bar -->
+    <div class="bg-brand text-white py-2 px-4 text-center text-xs sm:text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-white animate-ping"></span>
+        <span>Key Fob Access 5:00 AM - 11:00 PM Daily Across 3 SF Locations + Sunporch Yoga!</span>
+        <a href="#locations" class="underline hover:text-black transition-colors ml-2 hidden sm:inline">View Studios &rarr;</a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 glass-panel border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-brand flex items-center justify-center font-heading text-2xl text-white shadow-lg group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-heading text-2xl sm:text-3xl tracking-wider text-white leading-none">
+                            fit <span class="text-brand">LOCAL</span> fit
+                        </span>
+                        <span class="text-[10px] tracking-widest text-gray-400 font-semibold uppercase">San Francisco</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-brand transition-colors">Our Story</a>
+                    <a href="#services" class="text-gray-300 hover:text-brand transition-colors">Services</a>
+                    <a href="#sunporch" class="text-gray-300 hover:text-brand transition-colors">Sunporch Yoga</a>
+                    <a href="#locations" class="text-gray-300 hover:text-brand transition-colors">Locations</a>
+                    <a href="#ondemand" class="text-gray-300 hover:text-brand transition-colors">On Demand</a>
+                    <a href="#faq" class="text-gray-300 hover:text-brand transition-colors">FAQ</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="sms:4158860119" class="text-sm font-semibold text-gray-300 hover:text-white flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white/5 hover:bg-white/10 transition border border-white/5">
+                        <i class="fa-solid fa-comment-sms text-brand"></i>
+                        <span>Text Us: 415-886-0119</span>
+                    </a>
+                    <button onclick="openModal()" class="bg-brand hover:bg-brand-hover text-white px-5 py-2.5 rounded-xl font-bold text-sm tracking-wide transition shadow-lg orange-glow-hover flex items-center gap-2">
+                        <span>Get Fob Pass</span>
+                        <i class="fa-solid fa-key text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="lg:hidden text-gray-300 hover:text-white p-2 text-2xl focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-brand-card border-b border-gray-800 px-6 py-6 space-y-4">
+            <a href="#about" onclick="closeMenu()" class="block text-gray-200 hover:text-brand font-medium text-lg">Our Story</a>
+            <a href="#services" onclick="closeMenu()" class="block text-gray-200 hover:text-brand font-medium text-lg">Services</a>
+            <a href="#sunporch" onclick="closeMenu()" class="block text-gray-200 hover:text-brand font-medium text-lg">Sunporch Yoga</a>
+            <a href="#locations" onclick="closeMenu()" class="block text-gray-200 hover:text-brand font-medium text-lg">Locations</a>
+            <a href="#ondemand" onclick="closeMenu()" class="block text-gray-200 hover:text-brand font-medium text-lg">On Demand</a>
+            <a href="#faq" onclick="closeMenu()" class="block text-gray-200 hover:text-brand font-medium text-lg">FAQ</a>
+            <div class="pt-4 border-t border-gray-800 flex flex-col gap-3">
+                <a href="sms:4158860119" class="w-full text-center py-3 bg-white/10 rounded-xl text-white font-semibold">
+                    <i class="fa-solid fa-comment-sms text-brand mr-2"></i> Text 415-886-0119
+                </a>
+                <button onclick="openModal(); closeMenu();" class="w-full py-3 bg-brand text-white font-bold rounded-xl shadow-lg">
+                    Get Key Fob Pass
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1920&auto=format&fit=crop" 
+                 alt="fit LOCAL fit SF Gym Interior" 
+                 class="w-full h-full object-cover object-center filter brightness-50 contrast-125 scale-105 transform hover:scale-100 transition duration-1000">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-[#121212]/70 to-[#121212]/40"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#121212_90%)]"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8">
+            <!-- Green Business Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-white text-xs sm:text-sm font-semibold mb-8 shadow-2xl">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-emerald-300 font-bold">SF Green Business Certified</span>
+                <span class="text-gray-400">|</span>
+                <span>Family-Owned & Operated</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-heading text-6xl sm:text-8xl md:text-9xl tracking-tight text-white uppercase leading-none mb-6 drop-shadow-2xl">
+                YOUR <span class="text-brand underline decoration-brand/40 decoration-wavy">LOCAL</span> NEIGHBORHOOD GYM
+            </h1>
+
+            <p class="max-w-3xl mx-auto text-lg sm:text-2xl text-gray-300 font-light leading-relaxed mb-10">
+                Eco-conscious, high-vibe strength & fitness studios across San Francisco. Enjoy self-access via key fob <span class="text-white font-semibold underline decoration-brand">5:00 AM – 11:00 PM daily</span> across 3 neighborhood spots + Sunporch Yoga.
+            </p>
+
+            <!-- Hero CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto mb-16">
+                <button onclick="openModal()" class="w-full sm:w-auto px-8 py-4 bg-brand hover:bg-brand-hover text-white rounded-2xl font-bold text-lg tracking-wider transition-all transform hover:-translate-y-1 shadow-2xl orange-glow flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-key"></i>
+                    <span>CLAIM KEY FOB PASS</span>
+                </button>
+                <a href="#locations" class="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-2xl font-semibold text-lg backdrop-blur-sm transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-location-dot text-brand"></i>
+                    <span>Explore SF Locations</span>
+                </a>
+            </div>
+
+            <!-- Stats Bar Overlay -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-left">
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="font-heading text-4xl text-brand">3 + 1</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider">SF Gyms + Yoga Studio</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="font-heading text-4xl text-white">18 HRS</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider">Daily Key Fob Access</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="font-heading text-4xl text-brand">100+</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider">On-Demand Classes</div>
+                </div>
+                <div class="glass-panel p-5 rounded-2xl border border-white/10">
+                    <div class="font-heading text-4xl text-emerald-400">100%</div>
+                    <div class="text-xs text-gray-400 font-semibold uppercase tracking-wider">SF Green Certified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Green Certification & Family Values Ribbon -->
+    <section class="bg-gradient-to-r from-emerald-950/80 via-[#1a1a1a] to-emerald-950/80 border-y border-emerald-900/50 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-5">
+                    <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-3xl shrink-0">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-emerald-400 font-bold mb-1">Official Recognition</div>
+                        <h3 class="text-xl font-bold text-white">San Francisco Green Business Certified</h3>
+                        <p class="text-sm text-gray-400">We prioritize renewable power, sustainable gym gear, non-toxic sanitizers, and zero plastic waste.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 shrink-0">
+                    <span class="text-sm text-gray-300 font-medium">Text Us Any Questions:</span>
+                    <a href="sms:4158860119" class="px-5 py-2.5 rounded-xl bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/30 font-bold text-sm transition flex items-center gap-2">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <span>415-886-0119</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Neighborhood Story Section -->
+    <section id="about" class="py-24 relative bg-[#121212]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Left Column: Visual Showcase -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-800">
+                        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800&auto=format&fit=crop" 
+                             alt="fit LOCAL fit community" 
+                             class="w-full h-[520px] object-cover filter contrast-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Highlight Card -->
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-panel rounded-2xl border border-white/10">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-brand/20 border border-brand/40 flex items-center justify-center text-brand text-xl">
+                                    <i class="fa-solid fa-house-chimney text-brand"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-lg">Family Owned & Community Built</h4>
+                                    <p class="text-xs text-gray-400">No corporate chains, no predatory contracts. Just authentic local fitness.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-brand/10 border border-brand/20 text-brand text-xs font-bold uppercase tracking-widest">
+                        About fit LOCAL fit
+                    </div>
+                    <h2 class="font-heading text-5xl sm:text-6xl text-white tracking-wide uppercase leading-tight">
+                        THE GYM BUILT FOR YOUR <span class="text-brand">NEIGHBORHOOD</span> LIFE
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed text-base sm:text-lg">
+                        <strong class="text-white">fit LOCAL fit</strong> was founded on a simple premise: exercise should be accessible, high quality, and deeply rooted in community. We are a family-owned network of neighborhood gyms and yoga studios designed specifically for San Francisco residents who want premium equipment without corporate hassle.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-brand-card border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-key text-brand text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Key Fob 5am-11pm</h4>
+                                <p class="text-xs text-gray-400">Workout on your schedule 365 days a year with instant key fob entry.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-brand-card border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-leaf text-emerald-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Eco Certified</h4>
+                                <p class="text-xs text-gray-400">SF Green Business Certified operations protecting our local environment.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-brand-card border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-users text-brand text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Expert Trainers</h4>
+                                <p class="text-xs text-gray-400">Certified coaches offering 1-on-1, duet, and small group sessions.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-brand-card border border-gray-800 flex items-start gap-3">
+                            <i class="fa-solid fa-heart-pulse text-brand text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Sunporch Yoga</h4>
+                                <p class="text-xs text-gray-400">Dedicated light-filled studios for yoga, Pilates, and mindful movement.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-6">
+                        <button onclick="openModal()" class="px-6 py-3.5 bg-brand hover:bg-brand-hover text-white rounded-xl font-bold text-sm tracking-wide transition shadow-lg orange-glow">
+                            Join Our Family
+                        </button>
+                        <a href="sms:4158860119" class="text-gray-300 hover:text-white text-sm font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-comment text-brand"></i> Text a Local Coach
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Offerings Grid -->
+    <section id="services" class="py-24 bg-brand-card relative border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand font-bold uppercase tracking-widest text-xs">Customized Fitness Solutions</span>
+                <h2 class="font-heading text-5xl sm:text-6xl text-white tracking-wide uppercase mt-2">
+                    OUR CORE SERVICES
+                </h2>
+                <p class="text-gray-400 text-base sm:text-lg mt-3">
+                    Whether you thrive in solo workout routines or prefer guided instruction, we offer high-caliber training tailored to your SF lifestyle.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1: Personal Training -->
+                <div class="group bg-[#121212] rounded-3xl overflow-hidden border border-gray-800 hover:border-brand/60 transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop" 
+                             alt="Personal Training at fit LOCAL fit" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-brand text-white text-xs font-bold rounded-lg uppercase tracking-wider">
+                            Most Popular
+                        </span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Personal Training</h3>
+                            <p class="text-sm text-brand font-medium mb-4">One-on-One or Duet Sessions</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Individualized biomechanical programming tailored to your goals. Choose solo coaching or pair up with a workout partner for duet training.
+                            </p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Custom movement assessment</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Progressive overload tracking</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Flexible appointment scheduling</li>
+                            </ul>
+                        </div>
+                        <button onclick="openModal('Personal Training')" class="w-full py-3 rounded-xl bg-white/5 group-hover:bg-brand text-gray-200 group-hover:text-white font-bold text-sm transition-all border border-white/10 group-hover:border-transparent">
+                            Book Assessment
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Small Group Classes -->
+                <div class="group bg-[#121212] rounded-3xl overflow-hidden border border-gray-800 hover:border-brand/60 transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" 
+                             alt="Small Group Classes" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-lg uppercase tracking-wider">
+                            High Energy
+                        </span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Small Group Classes</h3>
+                            <p class="text-sm text-brand font-medium mb-4">Max 6-8 Participants</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                High energy without getting lost in the crowd. Get personalized trainer corrections with the motivating atmosphere of a close-knit group.
+                            </p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Strength & Conditioning</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Kettlebell & Functional Movement</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Small coach-to-client ratio</li>
+                            </ul>
+                        </div>
+                        <button onclick="openModal('Small Group Classes')" class="w-full py-3 rounded-xl bg-white/5 group-hover:bg-brand text-gray-200 group-hover:text-white font-bold text-sm transition-all border border-white/10 group-hover:border-transparent">
+                            View Class Schedule
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3: Advanced Courses & Workshops -->
+                <div class="group bg-[#121212] rounded-3xl overflow-hidden border border-gray-800 hover:border-brand/60 transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=800&auto=format&fit=crop" 
+                             alt="Advanced Courses" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-md text-white text-xs font-bold rounded-lg uppercase tracking-wider">
+                            Specialized
+                        </span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Advanced Courses</h3>
+                            <p class="text-sm text-brand font-medium mb-4">Workshops & Events</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Deepen your skill set with specialized multi-week workshops focusing on powerlifting technique, Olympic lifting, mobility, and recovery.
+                            </p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Technique masterclasses</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Guest coach series</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Mobility & injury prevention</li>
+                            </ul>
+                        </div>
+                        <button onclick="openModal('Advanced Courses')" class="w-full py-3 rounded-xl bg-white/5 group-hover:bg-brand text-gray-200 group-hover:text-white font-bold text-sm transition-all border border-white/10 group-hover:border-transparent">
+                            Explore Workshops
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4: Sunporch Yoga & Pilates -->
+                <div id="sunporch" class="group bg-[#121212] rounded-3xl overflow-hidden border border-gray-800 hover:border-brand/60 transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=800&auto=format&fit=crop" 
+                             alt="Sunporch Yoga Studio" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#121212] via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-amber-500 text-black text-xs font-bold rounded-lg uppercase tracking-wider">
+                            Yoga & Mindful
+                        </span>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Sunporch Yoga</h3>
+                            <p class="text-sm text-brand font-medium mb-4">Pilates, Yoga & Mindful Movement</p>
+                            <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                Light-filled studio spaces dedicated to restoring flexibility, core alignment, breathwork, and mindful strength training.
+                            </p>
+                            <ul class="space-y-2 text-xs text-gray-300 mb-6">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Vinyasa, Hatha & Mat Pilates</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Small personal yoga groups</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-brand"></i> Included with select pass tiers</li>
+                            </ul>
+                        </div>
+                        <button onclick="openModal('Sunporch Yoga')" class="w-full py-3 rounded-xl bg-white/5 group-hover:bg-brand text-gray-200 group-hover:text-white font-bold text-sm transition-all border border-white/10 group-hover:border-transparent">
+                            Discover Sunporch Studio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5: On Demand Remote Workouts -->
+                <div id="ondemand" class="group bg-[#121212] rounded-3xl overflow-hidden border border-gray-800 hover:border-brand/60 transition-all duration-300 hover:-translate-y-2 flex flex-col md:col-span-2 lg:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+                        <div class="relative h-64 md:h-full overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" 
+                                 alt="On Demand Workouts" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-[#121212] hidden md:block"></div>
+                        </div>
+                        <div class="p-8 flex flex-col justify-between">
+                            <div>
+                                <span class="px-3 py-1 bg-brand/20 border border-brand/40 text-brand text-xs font-bold rounded-lg uppercase tracking-wider">
+                                    24/7 Digital Portal
+                                </span>
+                                <h3 class="text-3xl font-bold text-white mt-3 mb-2">On Demand Fitness</h3>
+                                <p class="text-sm text-brand font-medium mb-4">100+ Remote Workouts Anywhere</p>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                                    Can't make it to Cortland, Chenery, or Irving today? Access our digital library featuring 100+ guided workouts created by your favorite fit LOCAL fit coaches.
+                                </p>
+                                <div class="grid grid-cols-2 gap-3 mb-6">
+                                    <div class="p-3 rounded-lg bg-white/5 text-xs text-gray-300">
+                                        <i class="fa-solid fa-play text-brand mr-1"></i> Bodyweight & HIIT
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-white/5 text-xs text-gray-300">
+                                        <i class="fa-solid fa-play text-brand mr-1"></i> Kettlebell & Dumbbell
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-white/5 text-xs text-gray-300">
+                                        <i class="fa-solid fa-play text-brand mr-1"></i> Yoga & Mobility Flow
+                                    </div>
+                                    <div class="p-3 rounded-lg bg-white/5 text-xs text-gray-300">
+                                        <i class="fa-solid fa-play text-brand mr-1"></i> Express 20-Min Sessions
+                                    </div>
+                                </div>
+                            </div>
+                            <button onclick="openModal('On Demand Workouts')" class="w-full py-3.5 rounded-xl bg-brand text-white font-bold text-sm shadow-lg orange-glow-hover transition">
+                                Unlock Digital Pass
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Locations Showcase Section -->
+    <section id="locations" class="py-24 bg-[#121212] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-brand font-bold uppercase tracking-widest text-xs">Neighborhood Network</span>
+                    <h2 class="font-heading text-5xl sm:text-6xl text-white tracking-wide uppercase mt-1">
+                        SAN FRANCISCO LOCATIONS
+                    </h2>
+                    <p class="text-gray-400 max-w-xl text-base mt-2">
+                        One membership or key fob gives you access across our neighborhood gyms in Bernal Heights, Glen Park, Outer Sunset, and Sunporch Yoga.
+                    </p>
+                </div>
+                <div class="p-4 glass-panel rounded-2xl border border-brand/30 flex items-center gap-4 shrink-0">
+                    <i class="fa-solid fa-clock text-brand text-2xl"></i>
+                    <div>
+                        <div class="text-xs text-gray-400 font-semibold uppercase">Self-Access Hours</div>
+                        <div class="text-white font-bold text-sm">5:00 AM – 11:00 PM Daily</div>
+                        <div class="text-[11px] text-gray-400">Staffed by appointment</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Location 1: Bernal Heights -->
+                <div class="bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand transition duration-300 flex flex-col">
+                    <div class="relative h-60">
+                        <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=800&auto=format&fit=crop" 
+                             alt="Bernal Heights Gym Location" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-black/70 backdrop-blur-md text-white text-xs font-bold rounded-full">
+                            Bernal Heights
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Cortland Gym</h3>
+                            <p class="text-brand font-semibold text-sm flex items-center gap-2 mb-4">
+                                <i class="fa-solid fa-location-dot"></i> 908 Cortland Ave, San Francisco, CA
+                            </p>
+                            <div class="space-y-2 text-xs text-gray-300 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Key fob access 5:00am - 11:00pm daily
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Full squat racks, dumbbells & cardio
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Personal training hub
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="sms:4158860119" class="flex-1 py-2.5 text-center bg-white/10 hover:bg-white/20 text-white font-semibold text-xs rounded-xl transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-comment-sms text-brand"></i> Text
+                            </a>
+                            <button onclick="openModal('Bernal Heights - 908 Cortland Ave')" class="flex-1 py-2.5 bg-brand hover:bg-brand-hover text-white font-bold text-xs rounded-xl transition shadow">
+                                Request Pass
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 2: Glen Park -->
+                <div class="bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand transition duration-300 flex flex-col">
+                    <div class="relative h-60">
+                        <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=800&auto=format&fit=crop" 
+                             alt="Glen Park Gym Location" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-black/70 backdrop-blur-md text-white text-xs font-bold rounded-full">
+                            Glen Park
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Chenery Gym</h3>
+                            <p class="text-brand font-semibold text-sm flex items-center gap-2 mb-4">
+                                <i class="fa-solid fa-location-dot"></i> 666 Chenery St, San Francisco, CA
+                            </p>
+                            <div class="space-y-2 text-xs text-gray-300 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Key fob access 5:00am - 11:00pm daily
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Functional turf & kettlebell zone
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Steps from Glen Park BART station
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="sms:4158860119" class="flex-1 py-2.5 text-center bg-white/10 hover:bg-white/20 text-white font-semibold text-xs rounded-xl transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-comment-sms text-brand"></i> Text
+                            </a>
+                            <button onclick="openModal('Glen Park - 666 Chenery St')" class="flex-1 py-2.5 bg-brand hover:bg-brand-hover text-white font-bold text-xs rounded-xl transition shadow">
+                                Request Pass
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 3: Outer Sunset -->
+                <div class="bg-brand-card rounded-3xl overflow-hidden border border-gray-800 hover:border-brand transition duration-300 flex flex-col">
+                    <div class="relative h-60">
+                        <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=800&auto=format&fit=crop" 
+                             alt="Outer Sunset Location" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-card via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 px-3 py-1 bg-black/70 backdrop-blur-md text-white text-xs font-bold rounded-full">
+                            Outer Sunset
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Irving Gym</h3>
+                            <p class="text-brand font-semibold text-sm flex items-center gap-2 mb-4">
+                                <i class="fa-solid fa-location-dot"></i> 3738 Irving St, San Francisco, CA
+                            </p>
+                            <div class="space-y-2 text-xs text-gray-300 mb-6">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Key fob access 5:00am - 11:00pm daily
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Ocean Beach surf-and-strength vibe
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-check text-brand"></i> Heavy strength & recovery equipment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="sms:4158860119" class="flex-1 py-2.5 text-center bg-white/10 hover:bg-white/20 text-white font-semibold text-xs rounded-xl transition flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-comment-sms text-brand"></i> Text
+                            </a>
+                            <button onclick="openModal('Outer Sunset - 3738 Irving St')" class="flex-1 py-2.5 bg-brand hover:bg-brand-hover text-white font-bold text-xs rounded-xl transition shadow">
+                                Request Pass
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Sunporch Yoga Studio Special Card -->
+            <div class="mt-8 bg-gradient-to-r from-amber-950/40 via-brand-card to-amber-950/40 border border-amber-500/30 rounded-3xl p-8 sm:p-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-3xl shrink-0">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-amber-400 font-bold">Studio Sanctuary</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1">Sunporch Yoga Studios</h3>
+                        <p class="text-sm text-gray-300 mt-1 max-w-2xl">
+                            Specialized sanctuary spaces for Yoga, Mat Pilates, Breathwork, and Restorative movement. Integrated with our neighborhood gym network.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 shrink-0 w-full sm:w-auto">
+                    <button onclick="openModal('Sunporch Yoga Studios')" class="w-full sm:w-auto px-6 py-3.5 bg-amber-500 hover:bg-amber-400 text-black font-bold text-sm rounded-xl transition shadow-lg">
+                        Explore Yoga Schedule
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How Key Fob Access Works -->
+    <section class="py-20 bg-brand-card border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand font-bold uppercase tracking-widest text-xs">Seamless Experience</span>
+                <h2 class="font-heading text-5xl text-white tracking-wide uppercase mt-1">
+                    HOW YOUR MEMBERSHIP WORKS
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base">Three easy steps to start training at your neighborhood gym today.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-gray-800 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand/20 border border-brand text-brand font-heading text-2xl flex items-center justify-center mb-6">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Claim Your Pass</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Request a trial or membership online or via text. We'll set up your member profile and issue your key fob.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-gray-800 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand/20 border border-brand text-brand font-heading text-2xl flex items-center justify-center mb-6">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Tap Fob 5am-11pm</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Swipe into Cortland, Chenery, or Irving anytime from 5:00 AM to 11:00 PM daily. Clean, safe, uncrowded atmosphere.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-[#121212] p-8 rounded-3xl border border-gray-800 relative">
+                    <div class="w-12 h-12 rounded-2xl bg-brand/20 border border-brand text-brand font-heading text-2xl flex items-center justify-center mb-6">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Train & Level Up</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Enjoy solo workouts, book a 1-on-1 trainer, pop into Sunporch Yoga, or stream On Demand workouts from home.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Community Vibe -->
+    <section class="py-24 bg-[#121212]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand font-bold uppercase tracking-widest text-xs">SF Local Community</span>
+                <h2 class="font-heading text-5xl text-white tracking-wide uppercase mt-1">
+                    LOVED BY NEIGHBORS
+                </h2>
+                <p class="text-gray-400 text-sm">Real reviews from members in Bernal Heights, Glen Park & Outer Sunset.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-panel p-8 rounded-3xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+                            "Having key fob access at 666 Chenery in Glen Park changed my morning routine completely. It's clean, eco-friendly, and never packed like the big mega-gyms downtown."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand/30 flex items-center justify-center font-bold text-brand">
+                            MR
+                        </div>
+                        <div>
+                            <div class="text-white font-bold text-sm">Maya R.</div>
+                            <div class="text-xs text-gray-400">Glen Park Resident</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+                            "Sunporch Yoga classes combined with personal training at Cortland Ave give me everything I need under one roof. Plus, love that they are SF Green Certified!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand/30 flex items-center justify-center font-bold text-brand">
+                            DL
+                        </div>
+                        <div>
+                            <div class="text-white font-bold text-sm">David L.</div>
+                            <div class="text-xs text-gray-400">Bernal Heights Resident</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-3xl border border-gray-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 text-sm italic leading-relaxed mb-6">
+                            "The text-only customer service is so convenient. Whenever I need a quick question answered, I just text 415-886-0119 and get a reply right away."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand/30 flex items-center justify-center font-bold text-brand">
+                            SK
+                        </div>
+                        <div>
+                            <div class="text-white font-bold text-sm">Sarah K.</div>
+                            <div class="text-xs text-gray-400">Outer Sunset Resident</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-brand-card border-t border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <span class="text-brand font-bold uppercase tracking-widest text-xs">Got Questions?</span>
+                <h2 class="font-heading text-5xl text-white tracking-wide uppercase mt-1">
+                    FREQUENTLY ASKED QUESTIONS
+                </h2>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                
+                <div class="bg-[#121212] rounded-2xl border border-gray-800 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left flex justify-between items-center text-white font-semibold text-lg hover:text-brand transition">
+                        <span>How do key fobs work for 5am-11pm access?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand transition-transform"></i>
+                    </button>
+                    <div id="faq-content-1" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        Upon joining, you will receive an encrypted RFID key fob or mobile app pass. Simply tap your fob at the front door reader at any of our 3 locations (Cortland, Chenery, Irving) between 5:00 AM and 11:00 PM 365 days a year for instant entry.
+                    </div>
+                </div>
+
+                <div class="bg-[#121212] rounded-2xl border border-gray-800 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left flex justify-between items-center text-white font-semibold text-lg hover:text-brand transition">
+                        <span>Can I visit all 3 locations + Sunporch Yoga with one pass?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand transition-transform"></i>
+                    </button>
+                    <div id="faq-content-2" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        Yes! Our All-Access memberships grant key fob entry to all neighborhood gym locations in Bernal Heights, Glen Park, and Outer Sunset, as well as class credits for Sunporch Yoga Studios.
+                    </div>
+                </div>
+
+                <div class="bg-[#121212] rounded-2xl border border-gray-800 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left flex justify-between items-center text-white font-semibold text-lg hover:text-brand transition">
+                        <span>What does SF Green Business Certified mean for members?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand transition-transform"></i>
+                    </button>
+                    <div id="faq-content-3" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        It means you are working out in a facility that adheres to rigorous San Francisco environmental standards: energy-efficient equipment, non-toxic eco cleaners, zero single-use plastics, and sustainable local sourcing.
+                    </div>
+                </div>
+
+                <div class="bg-[#121212] rounded-2xl border border-gray-800 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full p-6 text-left flex justify-between items-center text-white font-semibold text-lg hover:text-brand transition">
+                        <span>How do I contact staff or book personal training?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-brand transition-transform"></i>
+                    </button>
+                    <div id="faq-content-4" class="hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed border-t border-gray-800/50 pt-4">
+                        Because our locations are self-access from 5am-11pm, staff and personal trainers are present by appointment. The fastest way to reach us is by texting <strong class="text-brand">415-886-0119</strong> (text-only line) or booking online.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bold Orange CTA Banner -->
+    <section class="py-20 bg-gradient-to-r from-brand via-[#b84623] to-brand text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.15),transparent)]"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="font-heading text-5xl sm:text-7xl tracking-wide uppercase leading-tight mb-4">
+                READY TO JOIN YOUR NEIGHBORHOOD GYM?
+            </h2>
+            <p class="text-lg sm:text-xl text-white/90 font-light max-w-2xl mx-auto mb-8">
+                Experience key fob convenience, top-tier training, and eco-conscious fitness in San Francisco.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button onclick="openModal()" class="w-full sm:w-auto px-8 py-4 bg-white text-brand hover:bg-gray-100 rounded-2xl font-bold text-lg tracking-wider transition shadow-2xl">
+                    GET STARTED NOW
+                </button>
+                <a href="sms:4158860119" class="w-full sm:w-auto px-8 py-4 bg-black/30 hover:bg-black/50 text-white border border-white/30 rounded-2xl font-semibold text-lg backdrop-blur-sm transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-comment-sms"></i>
+                    <span>TEXT US: 415-886-0119</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Information Section -->
+    <section id="contact" class="py-24 bg-[#121212] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-brand font-bold uppercase tracking-widest text-xs">Get In Touch</span>
+                        <h2 class="font-heading text-5xl text-white tracking-wide uppercase mt-1">
+                            CONNECT WITH FIT LOCAL FIT
+                        </h2>
+                        <p class="text-gray-400 text-base mt-2">
+                            Have questions about memberships, key fobs, or personal training? Reach out to our local SF team today.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="p-6 rounded-2xl bg-brand-card border border-gray-800 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand/20 border border-brand/40 flex items-center justify-center text-brand text-2xl shrink-0">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Text Support (Text Only)</h4>
+                                <a href="sms:4158860119" class="text-brand font-extrabold text-xl hover:underline">415-886-0119</a>
+                                <p class="text-xs text-gray-400 mt-1">Quickest way to reach us! Text anytime for pass inquiries.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-brand-card border border-gray-800 flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-brand/20 border border-brand/40 flex items-center justify-center text-brand text-2xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Operating Hours</h4>
+                                <p class="text-sm text-gray-200 font-medium">Self-Access: <span class="text-brand font-bold">5:00 AM – 11:00 PM Daily</span></p>
+                                <p class="text-xs text-gray-400 mt-1">Staffed Hours: By Appointment & Scheduled Class Times</p>
+                            </div>
+                        </div>
+
+                        <div class="p-6 rounded-2xl bg-brand-card border border-gray-800 space-y-3">
+                            <h4 class="text-white font-bold text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-map-pin text-brand"></i> Locations Roster
+                            </h4>
+                            <ul class="space-y-2 text-xs text-gray-300">
+                                <li class="flex justify-between items-center py-1 border-b border-gray-800">
+                                    <span class="font-semibold text-white">Bernal Heights</span>
+                                    <span class="text-gray-400">908 Cortland Ave</span>
+                                </li>
+                                <li class="flex justify-between items-center py-1 border-b border-gray-800">
+                                    <span class="font-semibold text-white">Glen Park</span>
+                                    <span class="text-gray-400">666 Chenery St</span>
+                                </li>
+                                <li class="flex justify-between items-center py-1 border-b border-gray-800">
+                                    <span class="font-semibold text-white">Outer Sunset</span>
+                                    <span class="text-gray-400">3738 Irving St</span>
+                                </li>
+                                <li class="flex justify-between items-center py-1">
+                                    <span class="font-semibold text-amber-400">Sunporch Yoga</span>
+                                    <span class="text-gray-400">Studio Locations SF</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-brand-card p-8 sm:p-10 rounded-3xl border border-gray-800 shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Send Us A Message</h3>
+                    <p class="text-xs text-gray-400 mb-6">Fill out the form below and a local team member will get back to you within 24 hours.</p>
+
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Full Name</label>
+                            <input type="text" required placeholder="e.g. Jane Doe" class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-brand transition">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Phone (Textable)</label>
+                                <input type="tel" required placeholder="415-xxx-xxxx" class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-brand transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Preferred Location</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white focus:outline-none focus:border-brand transition">
+                                    <option>Bernal Heights (Cortland Ave)</option>
+                                    <option>Glen Park (Chenery St)</option>
+                                    <option>Outer Sunset (Irving St)</option>
+                                    <option>Sunporch Yoga Studios</option>
+                                    <option>All Locations</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-300 uppercase mb-2">Message or Inquiry</label>
+                            <textarea rows="4" required placeholder="Tell us about your fitness goals or key fob pass request..." class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white placeholder-gray-600 focus:outline-none focus:border-brand transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-brand hover:bg-brand-hover text-white font-bold rounded-xl shadow-lg orange-glow-hover transition text-sm tracking-wider uppercase">
+                            Submit Inquiry
+                        </button>
+                    </form>
+
+                    <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-sm text-center">
+                        <i class="fa-solid fa-circle-check mr-2"></i> Thank you! Your message has been sent. We will text or email you shortly.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 border-t border-gray-800 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Col 1 -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-brand flex items-center justify-center font-heading text-xl text-white">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <span class="font-heading text-2xl text-white tracking-wider">
+                            fit <span class="text-brand">LOCAL</span> fit
+                        </span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-gray-500">
+                        San Francisco's premier neighborhood gym and yoga studio network. Family-owned, SF Green Business Certified, 5am-11pm daily key fob access.
+                    </p>
+                    <div class="flex items-center gap-3 text-lg text-gray-400">
+                        <a href="#" class="hover:text-brand transition"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-brand transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-brand transition"><i class="fa-brands fa-yelp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Locations</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#locations" class="hover:text-brand transition">Bernal Heights: 908 Cortland Ave</a></li>
+                        <li><a href="#locations" class="hover:text-brand transition">Glen Park: 666 Chenery St</a></li>
+                        <li><a href="#locations" class="hover:text-brand transition">Outer Sunset: 3738 Irving St</a></li>
+                        <li><a href="#sunporch" class="hover:text-brand transition">Sunporch Yoga Studios</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-brand transition">Personal Training (1-on-1 & Duet)</a></li>
+                        <li><a href="#services" class="hover:text-brand transition">Small Group Classes</a></li>
+                        <li><a href="#services" class="hover:text-brand transition">Advanced Courses & Workshops</a></li>
+                        <li><a href="#sunporch" class="hover:text-brand transition">Sunporch Yoga & Pilates</a></li>
+                        <li><a href="#ondemand" class="hover:text-brand transition">On Demand 100+ Remote Workouts</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Hours & Contact</h4>
+                    <p class="text-xs text-gray-400 mb-2">Self-Access: <strong class="text-white">5:00 AM – 11:00 PM Daily</strong></p>
+                    <p class="text-xs text-gray-400 mb-4">Staffed by Appointment</p>
+                    <p class="text-xs text-gray-400">Text Line: <a href="sms:4158860119" class="text-brand font-bold hover:underline">415-886-0119</a></p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-600 gap-4">
+                <p>&copy; 2026 fit LOCAL fit San Francisco. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <span class="text-emerald-500 font-semibold"><i class="fa-solid fa-leaf mr-1"></i> SF Green Business Certified</span>
+                    <a href="#" class="hover:text-gray-400 transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400 transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Key Fob / Membership Pass Modal Popup -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brand-card border border-gray-800 rounded-3xl max-w-lg w-full p-8 relative shadow-2xl transform transition-all scale-95 opacity-0" id="modal-card">
+            
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-brand/20 border border-brand/40 text-brand text-2xl flex items-center justify-center mx-auto mb-3">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Claim Key Fob Pass</h3>
+                <p class="text-xs text-gray-400 mt-1" id="modal-subtitle">Access Cortland, Chenery, Irving & Sunporch Yoga</p>
+            </div>
+
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Your Name</label>
+                    <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white text-sm focus:outline-none focus:border-brand">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Mobile Phone (Text Confirmation)</label>
+                    <input type="tel" required placeholder="415-xxx-xxxx" class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white text-sm focus:outline-none focus:border-brand">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 uppercase mb-1">Primary Location</label>
+                    <select id="modal-location-select" class="w-full px-4 py-3 rounded-xl bg-[#121212] border border-gray-800 text-white text-sm focus:outline-none focus:border-brand">
+                        <option value="Bernal Heights">Bernal Heights (908 Cortland Ave)</option>
+                        <option value="Glen Park">Glen Park (666 Chenery St)</option>
+                        <option value="Outer Sunset">Outer Sunset (3738 Irving St)</option>
+                        <option value="Sunporch Yoga">Sunporch Yoga Studios</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-3.5 bg-brand hover:bg-brand-hover text-white font-bold rounded-xl shadow-lg orange-glow transition text-sm tracking-wider uppercase mt-2">
+                    Request Key Fob Pass
+                </button>
+            </form>
+
+            <div id="modal-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs text-center">
+                <i class="fa-solid fa-circle-check mr-1"></i> Request received! We will text your key fob pickup code shortly.
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
+
+        function closeMenu() {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+        }
+
+        // FAQ Toggle
+        function toggleFaq(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Modal Handler
+        const modalBackdrop = document.getElementById('modal-backdrop');
+        const modalCard = document.getElementById('modal-card');
+        const modalSubtitle = document.getElementById('modal-subtitle');
+
+        function openModal(serviceOrLocation) {
+            if (serviceOrLocation) {
+                modalSubtitle.innerText = `Interested in: ${serviceOrLocation}`;
+            } else {
+                modalSubtitle.innerText = 'Access Cortland, Chenery, Irving & Sunporch Yoga';
+            }
+            modalBackdrop.classList.remove('hidden');
+            setTimeout(() => {
+                modalCard.classList.remove('scale-95', 'opacity-0');
+                modalCard.classList.add('scale-100', 'opacity-100');
+            }, 10);
+        }
+
+        function closeModal() {
+            modalCard.classList.remove('scale-100', 'opacity-100');
+            modalCard.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modalBackdrop.classList.add('hidden');
+                document.getElementById('modal-success').classList.add('hidden');
+            }, 200);
+        }
+
+        modalBackdrop.addEventListener('click', (e) => {
+            if (e.target === modalBackdrop) closeModal();
+        });
+
+        // Form Submission Handlers
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            document.getElementById('form-success').classList.remove('hidden');
+            e.target.reset();
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            document.getElementById('modal-success').classList.remove('hidden');
+            setTimeout(() => {
+                closeModal();
+                e.target.reset();
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
